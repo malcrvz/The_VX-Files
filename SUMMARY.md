@@ -1,8 +1,9 @@
 # Table of contents
 
-## malcrvz's VX-Files
+## The VX-Files
 
 * [README.txt](README.md)
+* [@malcrvz](https://twitter.com/malcrvz)
 
 ## 📕 Theory concepts
 
