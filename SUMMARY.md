@@ -93,8 +93,8 @@
 
 ## 💽 Disks & Forensics&#x20;
 
-* [MBR vs GPT](disks-and-forensics/mbr-vs-gpt.md)
 * [Getting a disk ready](disks-and-forensics/getting-a-disk-ready.md)
+* [Recover deleted files](disks-and-forensics/recover-deleted-files.md)
 
 ## 🐧 Linux Essentials
 

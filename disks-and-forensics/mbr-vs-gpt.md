@@ -1,2 +1,0 @@
-# MBR vs GPT
-
