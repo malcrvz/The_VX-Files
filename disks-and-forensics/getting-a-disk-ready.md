@@ -66,7 +66,7 @@ Most popular types:
 * **NTFS:** designed by Microsoft, used on Windows, but is compatible with Linux thanks to drivers and is also useful for removable storage as it has great compatibility, great optimization and no size limitations like FAT32.
 * **EXT4:** the most recent versión of Extended Filesystem, native on Linux systems, best performance.\
 
-* SWAP:  special format file/partition that acts like an extensión of RAM, giving as much space as we want from the storage disk so if the RAM gets full the system doesn't crash and can continue creating new processes.\
+* **SWAP:** special format file/partition that acts like an extensión of RAM, giving as much space as we want from the storage disk so if the RAM gets full the system uses it for creating new processes and it doesn't crash or stops working.\
   But as it is in the disk connected by SATA or NVME maybe, not the RAM DIMM Module, its way more slow, so its best to avoid reaching that limit.
 
 4. Mount the partition&#x20;
@@ -89,9 +89,13 @@ It's critical for system booting, so when editing take great care and make sure 
 
 <pre class="language-bash"><code class="lang-bash">#Adding a new auto mount point
 sudo blkid            #List mounted points info and their UUID (Universal Unique Identifier), way more secure for naming a device in fstab and the standard
-UUID=longID /mnt/partitionMountpoint formatType defaults 0 2        #Line you need to add to the fstab  !Be careful
+UUID=fsID /mnt/partitionMountpoint formatType defaults 0 2        #Line you need to add to the fstab  !Be careful
 sudo mount -a         #Tries to mount all the filesystems mentioned in the fstab, you can reboot too
 <strong> 
+</strong><strong>#Add swap to fstab
+</strong><strong>UUID=IDofSwapPartition none swap sw 0 0    #Mountpoint =none, as swap is  a different type of storage used for virtual memory, so is not accesible in the traditional sense 
+</strong><strong>sudo swapon -a        #Activate swap on fstab
+</strong><strong>
 </strong><strong>#Example: Mounts ntfs filesystem on /mnt/MoviesHDD with ReadOnly permissions
 </strong><strong>UUID=332fd7eb-a8be-431d-923b-bc6799628e78 /mnt/MoviesHDD ntfs defaults,ro 0 2      
 </strong></code></pre>
