@@ -98,7 +98,7 @@
 
 ## 🐧 Linux Essentials
 
-* [Managing files & Regex](linux-essentials/managing-files-and-regex.md)
+* [Managing files, links and regex](linux-essentials/managing-files-links-and-regex.md)
 * [User management](linux-essentials/user-management.md)
 * [Passwd & Shadow files](linux-essentials/passwd-and-shadow-files.md)
 * [Privileges & sudo](linux-essentials/privileges-and-sudo.md)

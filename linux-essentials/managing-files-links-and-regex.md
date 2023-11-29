@@ -2,7 +2,7 @@
 description: These are basic common-use, for more check the holy man!
 ---
 
-# Managing files & Regex
+# Managing files, links and regex
 
 ## File managing and text processing commands
 
@@ -207,8 +207,6 @@ echo "12345" | tr -t "12345" "abc"        #Truncates array1 to lengh of array2, 
 {% endtab %}
 {% endtabs %}
 
-
-
 {% tabs %}
 {% tab title="grep" %}
 <pre class="language-bash"><code class="lang-bash">#grep will look for literal | egrep or "grep -E" will use regular expressions
@@ -370,3 +368,31 @@ diff file1 file2 | grep "^[><] > diff.txt #Saves only the lines that are differe
 ```
 {% endtab %}
 {% endtabs %}
+
+***
+
+## Links
+
+Links are special files that point to other files, we distinguish 2 types:
+
+* **Hard Link:** points to the data in the disk itself, to the exact inode, if you create a hardlink and check with `ls -i` you will see that they both point to the same inode index. It's like opening another door to the same place. So if you delete the original file, it will still be there, until all hardlinks are removed the file isn't removed from the disk.\
+  Also they can't be pointing to different filesystems(partitions), as inodes would collide since every partition has it's own index. You can only do hardlinks in the same partition.\
+  Neither they can point to directories because they could cause errors in correlation.\
+  \
+  Take in mind that hardlinks share also metadata, so privileges will be the same everywhere in every link, but you can create a hardlink on a public directory pointing to a file on a private directory (ex: your home where no one can access) and they could have access to it while not being able to even see the directory where it comes from.\
+
+* **Symbolic Link (AKA Soft Link):** points to the path to the data, not the data itself. Unlike hardlinks, when you create a symlink it will use a different inode, they are not the same file per se. So if you delete the original file, the symlink will remain broken, unless you place a file with the same exact name and path again and if you delete the symlink, just create another, no drama. \
+  Unlike hard links, they can be used for directories.\
+  They are like shortcuts on Windows, a convenient "within reach" pathway to another file/directory. \
+  A big positive is that as they only point to a route, you can use them between different filesystems(partitions) or even external storage devices. \
+  \
+  They usually have `lrwxrwxrwx` privileges, but its meaningless as they share the privileges of the original file and the directory they are in. \
+  Also on a sticky bit directory, only the owner of the link may use it
+
+
+
+```bash
+ln /route/sourceFile /route/newLink        #Creates a Hard link of sourceFile
+ln -s /route/sourceFile /route/newLink     #Creates a Symbolic link of sourceFile
+
+```
