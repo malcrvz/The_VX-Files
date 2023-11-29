@@ -70,23 +70,28 @@ stat file1
 
 **Special privileges**
 
-When an executable has special privileges "setuid" it means that whoever executes it, will do as if it was the owner of the executable. This is used in binaries like `passwd` to let users change their own passwords and edit sensible files like `/etc/shadow` as root, but in a controlled way as they can only edit their password not others.
+When an executable(binarie) has special privileges "setuid" it means that whoever executes it, will do as if it was the owner of the binarie. This is used for example in `passwd` to let users change their own passwords and edit sensible files like `/etc/shadow` as root, but in a controlled way as they can only edit their password not others.
 
-Is shown as `rws`, if it's capitalized (`rwS` ) means it has no executable privileges in the first place, making it useless.&#x20;
+Is shown as `rws`, if it's capitalized (`rwS` ) means it has no executable privileges in the first place, making it useless. \
 
-For groups we can use "setgid" and executables will be executed as the original group of the file instead of the one from the other user.
 
-Is shown as `s/S` same as setuid but in the group segment
+For groups we can use "setgid" and assign it to binaries and directories too, same as setuid, items assigned or created inside the folder (can also be recursive with -R) will be executed or created as the owner of the item.
+
+Is shown as `s/S` same as setuid but in the group segment.
 
 **Sticky Bit**
 
-Its used to prevent users that are not the owner to delete a file.
+Its used to prevent users that are not the owner of the directory, owner of the file, or root, to delete a file from a designed directory.
 
-Placed on a directory, it will prohibit users -that are not the owner of a file-, to delete anything inside the folder that's not theirs, meaning others could create of modify files but only the owner or root can delete or rename the file.
+Placed always on a directory, it will prohibit users -that are not the owner of a file- to delete anything inside the folder that's not theirs, meaning others could create or modify files in a more controlled and not so catastrophic way.
 
-Useful for directories like `/tmp` where most users have access and could write or delete files from other users
+Useful for directories like `/tmp` where most users have access and deleting files from other users could be a problem.
 
 Is shown at the end, in the "others" segment instead of "x", `rwt` if executable, `rwT` if not executable
+
+{% hint style="warning" %}
+Though useful, special permissions can easily become a vulnerability if not precisely configured, and a great vector for privilege scaling. Look for them when pentesting [;)](../baseline-pentesting/tools/6.-privilege-escalation-and-lateral-movement/possible-vectors.md)
+{% endhint %}
 
 ```bash
 #Managing setuid
@@ -97,11 +102,13 @@ rwsr--r--
 #Managing setgid
 chmod g+s file1
 chmod 2nnn file1
+chmod -R g+s directory/
 rwxrwsr--
 
 #Managing sticky bit
 chmod o+t directory/
 chmod 1nnn directory/
+chmod -R o+s directory/
 rwxrwxrwt
 ```
 

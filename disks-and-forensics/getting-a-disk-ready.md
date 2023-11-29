@@ -22,7 +22,7 @@ m                            #Prints help menu
 (Windows 7 32bits and below only function with MBR)
 
 \
-**GPT(GUID Partition Table):** new structure, used with UEFI with modern computers. Can hold up to 128 primary partitions with practically unlimited space. Also easier to recover in case of corruption and more secure.
+**GPT(GUID Partition Table):** new structure, used with UEFI in modern computers. Can hold up to 128 primary partitions with practically unlimited space. Also easier to recover in case of corruption and more secure. Preferable unless you are working with specific old systems.
 
 (Windows Vista 64bits and above requieres GPT with UEFI)
 {% endhint %}
@@ -59,7 +59,7 @@ sudo swapoff /swapfile           #Turn off swapfile
 
 ```
 
-Most popular types:
+#### Most popular types:
 
 * **FAT32:** compatible with almost everything, optimized for removable storage though has a limitation of 4GB for a single file. `mkfs.fat`
 * **exFAT:** ExtendedFAT, evolution of FAT32, optimized for removable storage, practically no limit on file or partition size and full compatible with modern OS's though it may not be compatible with old ones. `mkfs.exfat`
@@ -121,5 +121,57 @@ sudo mount -a         #Tries to mount all the filesystems mentioned in the fstab
 
 ### Windows with diskpart
 
+1. Indicate what partition table you are going to use MBR or GPT (recommended GPT)
 
+```powershell
+#On CMD
+diskpart         #Enter diskpart menu
+disk list        #List disks available
+select disk n    #Select the disk you want to edit  !Be careful, we will delete all data!
+clean            #Deletes all data and partitions from a disk
+convert gpt      #Creates partition table GPT
+convert mbr      #Creates partition table MBR
+detail disk      #Shows detailed info on current selected disk
 
+```
+
+{% hint style="info" %}
+**MBR (Master Boot Record):** old structure, used with BIOS, legacy mode, for old OS's, used for maximum compatibility. Allows only maximum of 3 primary partitions and 1 extended that can be filled with logical partitions, but only the primaries can be booteable and partitions can be of maximum 2TB.
+
+(Windows 7 32bits and below only function with MBR)
+
+\
+**GPT(GUID Partition Table):** new structure, used with UEFI with modern computers. Can hold up to 128 primary partitions with practically unlimited space. Also easier to recover in case of corruption and more secure.
+
+(Windows Vista 64bits and above requieres GPT with UEFI)
+{% endhint %}
+
+2. Set partitions
+
+```powershell
+#With disk still selected
+create partition primary          #Takes all space available into 1 partition
+create partition primary size=N   #Creates a partition with N Megabytes
+select partition N                #Select the partition you want
+detail partition                  #Shows detailed info on the current selected partition
+
+```
+
+3. Assign a filesystem
+
+See most popular ones [above](getting-a-disk-ready.md#most-popular-types).&#x20;
+
+```powershell
+filesystems              #Shows current FS and available ones
+format fs=x              #Formats partition into X filesystem, available: NTFS, FAT, FAT32
+format label=whatever    #Formats partition again and places a label as a "name", if done first formats partition to NTFS by default
+
+```
+
+4. Mount the partition
+
+```powershell
+select partition N    #Select the partition you want to mount
+assign letter=X       #Mounts the partition in the specified letter:
+
+```
