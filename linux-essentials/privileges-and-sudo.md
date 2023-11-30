@@ -65,7 +65,6 @@ chgrp -R group directory/           #Changes the group recursively in the whole 
 #Stat, shows detailed info about file, included privileges
 stat file1
 
-
 </code></pre>
 
 ### **Special privileges**
@@ -111,6 +110,7 @@ chmod o+t directory/
 chmod 1nnn directory/
 chmod -R o+s directory/
 rwxrwxrwt
+
 ```
 {% endcode %}
 
@@ -142,17 +142,15 @@ Some distros use `/etc/pam.d/common-session` or `/etc/login.defs`&#x20;
 They are represented as a "+" sign at the end of the privileges string in `ls`.
 
 <pre class="language-bash" data-title="Syntax"><code class="lang-bash">setfacl -m u:user1:rwx file1      #Gives "rwx" privileges to user1
-getfacl file1                     #Shows privileges and ACLs on file1
-
+getfacl file1                     #Shows privileges and ACLs on specified file
 setfacl -R -m u:user1:rx dir1     #Gives "rx" privileges to specified user on specified directory and everything inside, recursively, but future items will not be included
 setfacl -d                        #Makes the specified ACL the default on a directory and future new items inside
 setfacl -k                        #Remove default specified ACLs from a directory
 setfacl -R -m g:group1:rwX dir1   #Using "X" capitalized means it will give recursive "x" privileges only to directories inside dir1 and to dir1
 <strong>setfacl -x u:user1 file1          #Removes specified user from the ACL list
 </strong>setfacl -b file1                  #Removes all ACLs from specified file or directory
+getfacl file1 | setfacl --set-file=- file2    #Copy ACL of one file to other  !Use regex for multiple files
 
-#Copy ACL of one file to other
-getfacl file1 | setfacl --set-file=- file2    #Use regex for multiple files
 </code></pre>
 
 {% hint style="warning" %}
@@ -239,4 +237,5 @@ GROUP1       ALL= (WEB) ALL                          #All users inside alias GRO
 
 Host_Alias    SERVERS= server1, dhcp, DNS4           #Places hosts under the alias SERVERS
 Zack          SERVERS=(ALL:ALL) POWER                #Now the user Zack can use the commands inside POWER as privileged used in all the hosts inside the alias SERVERS
+
 ```
