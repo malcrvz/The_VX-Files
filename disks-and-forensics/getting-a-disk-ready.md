@@ -76,6 +76,9 @@ mkdir /mnt/partitionMountpoint              #Create directory(wherever you want,
 sudo mount /dev/X /mnt/partitionMountpoint  #Mount the partition in the directory previously created
 sudo umount /mnt/partitionMountpoint        #Unmount the partition from the file system, it will still be on /dev/X
 
+df -h                                       #Lists mounted filesystems, where they are mounted and space usage
+lsblk -f                                    #Lists devices, if they are mounted and where, and filesystem format type
+
 ```
 
 #### **/etc/fstab**

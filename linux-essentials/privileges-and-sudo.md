@@ -26,7 +26,7 @@ If user is deleted file will still be property of the user, though it will show 
 
 <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>source: linuxcommand.org </p></figcaption></figure>
 
-<pre class="language-bash"><code class="lang-bash">#Numeric mode chart
+<pre class="language-bash" data-title="Syntax"><code class="lang-bash">#Numeric mode chart
 7 == rwx
 6 == rw-
 5 == r-x
@@ -68,7 +68,7 @@ stat file1
 
 </code></pre>
 
-**Special privileges**
+### **Special privileges**
 
 When an executable(binarie) has special privileges "setuid" it means that whoever executes it, will do as if it was the owner of the binarie. This is used for example in `passwd` to let users change their own passwords and edit sensible files like `/etc/shadow` as root, but in a controlled way as they can only edit their password not others.
 
@@ -79,7 +79,7 @@ For groups we can use "setgid" and assign it to binaries and directories too, sa
 
 Is shown as `s/S` same as setuid but in the group segment.
 
-**Sticky Bit**
+#### **Sticky Bit**
 
 Its used to prevent users that are not the owner of the directory, owner of the file, or root, to delete a file from a designed directory.
 
@@ -93,6 +93,7 @@ Is shown at the end, in the "others" segment instead of "x", `rwt` if executable
 Though useful, special permissions can easily become a vulnerability if not precisely configured, and a great vector for privilege scaling. Look for them when pentesting [;)](../baseline-pentesting/tools/6.-privilege-escalation-and-lateral-movement/possible-vectors.md)
 {% endhint %}
 
+{% code title="Syntax" %}
 ```bash
 #Managing setuid
 chmod u+s file1
@@ -111,10 +112,11 @@ chmod 1nnn directory/
 chmod -R o+s directory/
 rwxrwxrwt
 ```
+{% endcode %}
 
-**UMASK (User Mask)**
+### **UMASK**
 
-By default items are created with a mask, usually 022, you can check it with `umask` (it will show an extra 0, **0**002, it just means its in octal, some languages like Perl or C need it).  \
+(User Mask) By default items are created with a mask, usually 022, you can check it with `umask` (it will show an extra 0, **0**002, it just means its in octal, some languages like Perl or C need it).  \
 But the starting privileges are different on directories and files, having directories more "flexible" privileges and files not being able to get executed by default for security reasons (scripts are dangerous!). \
 Directories start at 777 and files at 666.
 
@@ -130,11 +132,32 @@ If you want it to be permanent you have to edit your shell profile, for example 
 You can check the shell you are currently using with `echo $0` or the one you have assigned by default to your user with `echo $SHELL`&#x20;
 {% endhint %}
 
-To change the umask of all users in the system you have to add the line to `/etc/profile` and restart, though it will probably be overpassed by specific user profiles.
+To change the umask of all users in the system you have to add the line to `/etc/profile` and restart, though it will probably be over-passed by specific user profiles.
 
 Some distros use `/etc/pam.d/common-session` or `/etc/login.defs`&#x20;
 
+### FACL
 
+(File Access control List) They a are more advanced mechanism that standard privileges, with FACL we can define specific and detailed permissions to individual files for individual users or groups in a finer way. Use in combination with standard privileges for flexible management.\
+They are represented as a "+" sign at the end of the privileges string in `ls`.
+
+<pre class="language-bash" data-title="Syntax"><code class="lang-bash">setfacl -m u:user1:rwx file1      #Gives "rwx" privileges to user1
+getfacl file1                     #Shows privileges and ACLs on file1
+
+setfacl -R -m u:user1:rx dir1     #Gives "rx" privileges to specified user on specified directory and everything inside, recursively, but future items will not be included
+setfacl -d                        #Makes the specified ACL the default on a directory and future new items inside
+setfacl -k                        #Remove default specified ACLs from a directory
+setfacl -R -m g:group1:rwX dir1   #Using "X" capitalized means it will give recursive "x" privileges only to directories inside dir1 and to dir1
+<strong>setfacl -x u:user1 file1          #Removes specified user from the ACL list
+</strong>setfacl -b file1                  #Removes all ACLs from specified file or directory
+
+#Copy ACL of one file to other
+getfacl file1 | setfacl --set-file=- file2    #Use regex for multiple files
+</code></pre>
+
+{% hint style="warning" %}
+Useful, but they can be complex and conflict with standard privileges, so they amplify the _human factor_ hackers love. Look for them trying to scale privileges [;)](../baseline-pentesting/tools/6.-privilege-escalation-and-lateral-movement/possible-vectors.md)
+{% endhint %}
 
 ***
 
@@ -146,6 +169,7 @@ Basically lets low privileged users execute critical commands without giving the
 
 Normally login as root is disabled, so to be the administrator of a computer you have to be in the sudo group or have (ALL : ALL) ALL privileges in the /etc/sudoers file.
 
+{% code title="Syntax" %}
 ```bash
 sudo command                    #Execute a command as root
 sudo -u UserX command           #Execute a command as UserX
@@ -156,6 +180,7 @@ sudo -k                         #For convenience sudo will keep credentials for 
 sudo !!                         #Very useful when you forget to use sudo, "!!" will repeat the last command, but we place sudo this time ;)
 
 ```
+{% endcode %}
 
 ***
 
@@ -165,9 +190,12 @@ Located on `/etc/sudoers`, Is the configuration file that determines which users
 
 Its strongly recommended to edit it with the command `visudo` as it creates a temporal copy, sudoers.tmp, and checks for syntax errors before merging it with the original file.
 
+{% code title="Syntax" %}
 ```bash
-#Syntax
+#Structure
 user    host=(user:group) commands   
+
+#Parameters
 %group                               #Specifies group 
 NOPASSWD:                            #Doesnt need password to execute command
 PASSWD:                              #Asks for password, default, but can be used in combination with NOPASSWD
@@ -194,6 +222,7 @@ UserX    ALL=(ALL:ALL) /usr/bin/cat                  #UserX can execute "cat" co
 UserX    server1=(operator) /bin/ls, (root) /bin/kill, /usr/bin/cat #UserX, on server1, can execute "ls" as operator, and "kill" and "cat" as root
 
 ```
+{% endcode %}
 
 ```bash
 #Alias with examples

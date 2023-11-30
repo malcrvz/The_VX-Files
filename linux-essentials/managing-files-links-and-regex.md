@@ -391,8 +391,18 @@ Links are special files that point to other files, we distinguish 2 types:
 
 
 
+{% code title="Syntax" %}
 ```bash
-ln /route/sourceFile /route/newLink        #Creates a Hard link of sourceFile
-ln -s /route/sourceFile /route/newLink     #Creates a Symbolic link of sourceFile
+ln /route/sourceFile /route/newLink          #Creates a hard link of sourceFile
+ln -s /route/sourceFile /route/newLink       #Creates a symbolic link of sourceFile
 
+ln file1 file2 /destiny/route                #Creates multiple hard links in the destiny directory, keeps same name
+ln /route/file1 /route/file2 /destiny/route  #Creates multiple symbolic links in the destiny directory, keeps same name
 ```
+{% endcode %}
+
+***
+
+## TAR & Compressing/Decompressing
+
+a

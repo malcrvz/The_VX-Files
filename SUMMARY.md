@@ -94,14 +94,16 @@
 ## 💽 Disks & Forensics&#x20;
 
 * [Getting a disk ready](disks-and-forensics/getting-a-disk-ready.md)
+* [Inodes & Sectors](disks-and-forensics/inodes-and-sectors.md)
 * [Recover deleted files](disks-and-forensics/recover-deleted-files.md)
 
 ## 🐧 Linux Essentials
 
 * [Managing files, links and regex](linux-essentials/managing-files-links-and-regex.md)
+* [Privileges & sudo](linux-essentials/privileges-and-sudo.md)
 * [User management](linux-essentials/user-management.md)
 * [Passwd & Shadow files](linux-essentials/passwd-and-shadow-files.md)
-* [Privileges & sudo](linux-essentials/privileges-and-sudo.md)
+* [Find](linux-essentials/find.md)
 * [Terminal/TTY](linux-essentials/terminal-tty.md)
 
 ## 🪟 Windows Essentials
