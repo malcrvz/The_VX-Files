@@ -19,12 +19,8 @@ layout:
 
 # README.txt
 
-
-
 > "Every act of creation begins with an act of destruction."\
 > — Pablo Picasso
-
-
 
 
 
@@ -32,33 +28,32 @@ layout:
 
 {% code title="README.txt" lineNumbers="true" %}
 ```
-<3 Welcome to my ethical hacking notebook <3
+
+▄▄▄█████▓██░ ██▓█████     ██▒   █▒██   ██▒     █████▒██▓ ██▓    ▓█████   ██████ 
+▓  ██▒ ▓▓██░ ██▓█   ▀    ▓██░   █▒▒ █ █ ▒░   ▓██   ▒▓██▒▓██▒    ▓█   ▀ ▒██    ▒ 
+▒ ▓██░ ▒▒██▀▀██▒███       ▓██  █▒░░  █   ░   ▒████ ░▒██▒▒██░    ▒███   ░ ▓██▄   
+░ ▓██▓ ░░▓█ ░██▒▓█  ▄      ▒██ █░░░ █ █ ▒    ░▓█▒  ░░██░▒██░    ▒▓█  ▄   ▒   ██▒
+  ▒██▒ ░░▓█▒░██░▒████▒      ▒▀█░ ▒██▒ ▒██▒   ░▒█░   ░██░░██████▒░▒████▒▒██████▒▒
+  ▒ ░░   ▒ ░░▒░░░ ▒░ ░      ░ ▐░ ▒▒ ░ ░▓ ░    ▒ ░   ░▓  ░ ▒░▓  ░░░ ▒░ ░▒ ▒▓▒ ▒ ░
+    ░    ▒ ░▒░ ░░ ░  ░      ░ ░░ ░░   ░▒ ░    ░      ▒ ░░ ░ ▒  ░ ░ ░  ░░ ░▒  ░ ░
+  ░      ░  ░░ ░  ░           ░░  ░    ░      ░ ░    ▒ ░  ░ ░      ░   ░  ░  ░  
+         ░  ░  ░  ░  ░         ░  ░    ░             ░      ░  ░   ░  ░      ░  
+                              ░           
+by @malcrvz 
+Proyect started on All Hallows' Eve of 2023
+
+
+Welcome to my ethical hacking notebook <3
+
 Cheat sheets, down to earth definitions and guides!
-If you are in GitHub switch to GitBook, so much pretty! Link in "About".
-Save this page in bookmarks, others may vary or dissapear.
-Keep in mind its just one dude, there might be errors, always check your sources!
-Hope my proyect helps you, but I can't recommend enough to do your own.
+If you are on GitHub switch to GitBook, so much pretty! Link in "About".
+Save this page in bookmarks, others may dissapear.
+Keep in mind it's just one dude, there will be errors, always check your sources!
+Also english is not my native language so sorry for possible misspellings.
+
+Hope my proyect helps you, but I can't recommend enough to create your own.
 
 
-Any questions, suggestions or just chatting be welcomed at: 
-Twitter: @malcrvz
-
-Proyect started on 31/10/2023 🎃🪦💀
 GPL-3.0 license, do whatever you want but keep it free.
-```
-{% endcode %}
-
-***
-
-{% code title="Keys" %}
-```
-? Concise explanation 
-! Tips or precautions
-$ Literal example
-n Whatever number
-
-"Theory concepts" category for learning "what, why"
-"* Pentesting" categories for learning "how"
-"* Essentials" categories for everything
 ```
 {% endcode %}

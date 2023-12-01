@@ -3,7 +3,7 @@
 ## The VX-Files
 
 * [README.txt](README.md)
-* [@malcrvz](https://twitter.com/malcrvz)
+* [Follow updates, questions, suggestions or just chatting: @malcrvz](https://twitter.com/malcrvz)
 
 ## 📕 Theory concepts
 
@@ -99,11 +99,12 @@
 
 ## 🐧 Linux Essentials
 
+* [1, 0, bits, Bytes: Units of digital information](linux-essentials/1-0-bits-bytes-units-of-digital-information.md)
 * [Managing files, links and regex](linux-essentials/managing-files-links-and-regex.md)
 * [Privileges & sudo](linux-essentials/privileges-and-sudo.md)
 * [User management](linux-essentials/user-management.md)
 * [Passwd & Shadow files](linux-essentials/passwd-and-shadow-files.md)
-* [Find](linux-essentials/find.md)
+* [find](linux-essentials/find.md)
 * [Terminal/TTY](linux-essentials/terminal-tty.md)
 
 ## 🪟 Windows Essentials

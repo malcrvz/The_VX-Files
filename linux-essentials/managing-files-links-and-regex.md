@@ -30,7 +30,6 @@ echo "\033[1;31mThis is red"    #Prints string after "m" in red color
 echo "\033[5;31mFlashing red"   #Prints string in red that will blink constantly
 #\033 is for Escape, some colors: [1;33mOrange, [1,34mBlue, [1;35mPurple
 
-
 ```
 {% endtab %}
 
@@ -56,7 +55,6 @@ cat -v file1                     #"non-printing" Use ^ and M- notation for speci
 
 <strong>nl file1                         #Prints contents of file1 with numbered lines, same as cat -n
 </strong><strong>
-</strong><strong>
 </strong></code></pre>
 {% endtab %}
 
@@ -77,7 +75,6 @@ sort -k n file1            #Sort by n field, separated by space by default
 sort -k n,m file1          #Sorts by range of fields in n-m, also can be same numer ex: 2,2 to considerate only that field
 sort -t : -k n file1       #-t specifies what is the field separator, instead of default space
 sort -u file1              #Unique, sorts and only prints 1 ocurrence of repeated lines
-
 
 </code></pre>
 {% endtab %}
@@ -114,7 +111,6 @@ m                        #Will ask for a letter and will mark the position with 
 v                        #Opens the file with your default text editor
 ctrl+G                   #Shows file location, lines, size and percentage statistics
 
-
 ```
 {% endtab %}
 
@@ -146,7 +142,6 @@ csplit -n n                     #Generate n number of suffix digits instead of 2
 
 #Join
 cat prefix* > joinedFile       #Join all pieces into a full file again
-
 
 ```
 {% endtab %}
@@ -202,7 +197,6 @@ echo "ABC" | tr [:upper:] [:lower:]       #Replace uppercase with lowercase
 #Truncate
 echo "12345" | tr -t "12345" "abc"        #Truncates array1 to lengh of array2, prints "abc45"
 
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -248,6 +242,7 @@ grep -E "a{n,}" file1           #Prints lines that contain "a" repeated n or mor
 grep -E "a{,n}" file1           #Prints lines that contain "a" repeated maximum n times
 grep -E "a|b" file1             #Prints lines that contain "a" or "b"
 grep -E "Ja(s|cks)on" file1     #Prints lines that contain "Jason" or "Jackson" 
+
 </code></pre>
 {% endtab %}
 
@@ -309,6 +304,7 @@ uniq -f n file1            #Avoid comparing the first n fields
 #Examples
 sort file.txt | uniq       #Delete duplicated lines from a sorted file, so separated duplicates do not get ignored
 cut -d"," -f1 file1 | uniq #Delete duplicated first fields in a .csv
+
 </code></pre>
 {% endtab %}
 
@@ -398,6 +394,7 @@ ln -s /route/sourceFile /route/newLink       #Creates a symbolic link of sourceF
 
 ln file1 file2 /destiny/route                #Creates multiple hard links in the destiny directory, keeps same name
 ln /route/file1 /route/file2 /destiny/route  #Creates multiple symbolic links in the destiny directory, keeps same name
+
 ```
 {% endcode %}
 
