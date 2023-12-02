@@ -19,12 +19,13 @@ If searching through a symbolic link of a directory remember to place an extra "
 
 {% code title="Syntax" %}
 ```bash
-#Structure
-find /dir_to_search -options item
-find /multiple /directories /possible -options item
-find /dir_to_search -options -options -options... item
-find /dir_to_search ! -negatedOption objective
-find /dir_to_search -globalOptions -options objective
+#Basic structure
+find /dir_to_search -options target
+find /multiple /dirs /possible -options target
+find /dir -options -options -options... target
+find /dir ! -negatedOption target
+find /dir -globalOptions -options target
+find /dir -not -option reversedTarget
 
 #Types
 find / -type f                         #Prints all files in the specified directory
@@ -35,7 +36,8 @@ find / -type l                         #Prints all symbolic links in the specifi
 find . -name file.txt                  #Prints files with matching name "file.txt" in current directory
 find / -name *.pdf                     #Prints files with matching name using regex
 find / -iname FiLe                     #Prints files ignoring case
-
+find / \( -name "a" -o -name "b" \)    #Prints files either named "a" OR "b"
+find / -not -name abc                  #Prints all files NOT named "abc"
 #Links
 find / -links +1                       #Prints all items with more than 1 hard link
 
@@ -49,6 +51,7 @@ find / -size +100c -size -1M           #Prints files between 100 Bytes and 1MiB
 find / -size -1048576c                 #Prints files smaller than 1 MiB
 find / -size -1M                       #Prints empty files
 find / -size -2M                       #Prints all files smaller than 2 MiB, including KiB and Bytes
+find / -empty                          #Prints only empty items
 
 #User
 find / -user user1                     #Prints items owned by specified user
@@ -71,28 +74,49 @@ find / -mindepth n                     #Searches after n depth of subdirectories
 find / -mindepth n -maxdepth n         #Searches between range specified, starts at minimum n depth until max n depth
 
 #Date and time
+find / -atime 0                        #Prints items (a)ccessed between now and 24 hours ago  ?"-atime -1" prints the same
+find / -atime +0                       #Prints items accessed more than 24h ago
+find / -atime 1                        #Prints items accesed between 24h and 48h ago
+find / -atime +50 -atime -100          #Prints items accessed between 50 and 100 days ago
+find / -amin -60                       #Prints items accesed last 60 minutes
+find / -mtime n                        #Prints items (m)odified n ago
+find / -ctime n                        #Prints items with its inode (c)hanged n ago
 
+#Find and execute commands
+find / -exec command {} \;             #Executes x command on each file found
+#Think of {} like a position marker, like a for loop, one by one each file will pass through {} and get the command done
+#"\;" to escape the ";" that indicates the end of the command
 
 ```
 {% endcode %}
 
-
+{% hint style="danger" %}
+Be very careful, `find` can be a weapon of mass destruction! \
+Never use on a production system unless you REALLY know what you are doing.
+{% endhint %}
 
 {% code title="Useful examples" %}
 ```bash
-#Find the top 10 largest files on a system
+#Finds the top 10 largest files on a system
 sudo find / -type f -exec du -h {} + | sort -rh | head -n 10 2> /dev/null
 
-#Find all .txt files of a user in the whole system
+#Finds all .txt files of a user in the whole system
 find / -user user1 -iname *.txt
 
-#Find all files with 777 privileges on the system
+#Finds all files with 777 privileges on the system
 find / -type f -perm 777
 
-#Find all files not owned by root in which (o)thers can read and execute
+#Finds all files not owned by root in which (o)thers can read and execute
 find / -type f ! -user root -perm -o=rx
 
+#Finds and deletes all .log files from the system
+sudo find / -type f -name *.log -exec rm -f {} \;
 
+#Searches all system, excluding specified dir for files with full privileges on others
+find / -path /proc -prune -o -type f -perm -o=rwx
+
+#Searches all system, excluding specified dirs for files with others=rwx
+find / \(-path /proc -o -path /sys \) -prune -o -type f -perm -o=rwx
 
 ```
 {% endcode %}

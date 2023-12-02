@@ -3,7 +3,7 @@
 ## The VX-Files
 
 * [README.txt](README.md)
-* [Updates, questions, suggestions or just chatting: @malcrvz](https://twitter.com/malcrvz)
+* [For updates, questions, suggestions or just chatting: @malcrvz](https://twitter.com/malcrvz)
 
 ## 📕 Theory concepts
 
