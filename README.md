@@ -51,9 +51,9 @@ Also english is not my native language so sorry for possible misspellings.
 
 The notebook assumes you have basic(not much) understanding on computer science.
 Getting a small IT degree/cert >may&#x3C; be preferable before diving into infosec.
-<strong>Anyway, hope my proyect helps you, but I can't recommend enough to create your own.
+<strong>I hope my proyect helps you, but I can't recommend enough to create your own.
 </strong><strong>Teaching is the fastest way to learn, and sharing is caring!
-</strong><strong>
+</strong><strong>If this helps you in any way, please reach, it would make my day! &#x3C;3
 </strong>
 GPL-3.0 license, do whatever you want but keep it free.
 </code></pre>

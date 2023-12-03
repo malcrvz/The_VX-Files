@@ -18,7 +18,7 @@
   * [APT - Advanced Persistent Threat](theory-concepts/malware-theory/apt-advanced-persistent-threat.md)
   * [Spammer](theory-concepts/malware-theory/spammer.md)
   * [Spyware](theory-concepts/malware-theory/spyware.md)
-  * [Botnet](theory-concepts/malware-theory/botnet.md)
+  * [Botnet & DDoS](theory-concepts/malware-theory/botnet-and-ddos.md)
   * [Scareware](theory-concepts/malware-theory/scareware.md)
   * [Downloader/Cabby](theory-concepts/malware-theory/downloader-cabby.md)
   * [Adware/PUP/PUA](theory-concepts/malware-theory/adware-pup-pua.md)
@@ -96,6 +96,7 @@
 * [Getting a disk ready](disks-and-forensics/getting-a-disk-ready.md)
 * [Inodes & Sectors](disks-and-forensics/inodes-and-sectors.md)
 * [Recover deleted files](disks-and-forensics/recover-deleted-files.md)
+* [Secure file deletion](disks-and-forensics/secure-file-deletion.md)
 
 ## 🐧 Linux Essentials
 
