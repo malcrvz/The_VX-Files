@@ -1,3 +1,17 @@
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
 # find
 
 Your ally once exploited a system, will help you find sensible data and escalate privileges, getting comfortable with it will save you tons of time! \
@@ -38,8 +52,10 @@ find / -name *.pdf                     #Prints files with matching name using re
 find / -iname FiLe                     #Prints files ignoring case
 find / \( -name "a" -o -name "b" \)    #Prints files either named "a" OR "b"
 find / -not -name abc                  #Prints all files NOT named "abc"
+
 #Links
 find / -links +1                       #Prints all items with more than 1 hard link
+find / -inum n                         #Prints items with exact inode number, can also be +n or -n for greater or lower than
 
 #Size
 find / -size +4k                       #Print files larger than 4 Kibibytes (KiB)
@@ -57,6 +73,8 @@ find / -empty                          #Prints only empty items
 find / -user user1                     #Prints items owned by specified user
 find / ! -user root                    #Prints not owned by specified user
 find / -group group1                   #Prints items owned by specified group
+find / -uid 1000                       #Prints items owned by specified userID
+find / -gid 1000                       #Prints items owned by specified groupID
 
 #Privileges
 #If you don't add "-type f" or "d" you will get links too, making it messy
@@ -74,19 +92,29 @@ find / -mindepth n                     #Searches after n depth of subdirectories
 find / -mindepth n -maxdepth n         #Searches between range specified, starts at minimum n depth until max n depth
 
 #Date and time
+#+n = more than n ago | -n = less than n ago | n = exact, rounded in days, minutes...
+#Two time options: time = days || min = minutes
+#(a)ccessed, (m)odified, (c)hanged status/metadata(privileges)
 find / -atime 0                        #Prints items (a)ccessed between now and 24 hours ago  ?"-atime -1" prints the same
 find / -atime +0                       #Prints items accessed more than 24h ago
 find / -atime 1                        #Prints items accesed between 24h and 48h ago
-find / -atime +50 -atime -100          #Prints items accessed between 50 and 100 days ago
+find / -amin +1                        #Prints items accesed more than 1 minutes ago
 find / -amin -60                       #Prints items accesed last 60 minutes
+find / -atime +50 -atime -100          #Prints items accessed between 50 and 100 days ago
 find / -mtime n                        #Prints items (m)odified n ago
-find / -ctime n                        #Prints items with its inode (c)hanged n ago
+find / -ctime n                        #Prints items with its status/metadata(privileges) (c)hanged n ago
 
 #Find and execute commands
 find / -exec command {} \;             #Executes x command on each file found
-#Think of {} like a position marker, like a for loop, one by one each file will pass through {} and get the command done
+#Think of {} like a for loop, one by one each file will pass through {} and get the command done
+#Example: -exec cp {} /newDir \;
 #"\;" to escape the ";" that indicates the end of the command
 
+find / -exec sh -c "command {} ; command {}" \; #Executes multiple commands on each file found
+#Example uses "sh" but you can use whatever shell you want, bash, zsh...
+
+find / -exec command {} + | command | command
+#If you are going to pipeline the output, after -exec place "+" instead of "\;"
 ```
 {% endcode %}
 
@@ -118,5 +146,15 @@ find / -path /proc -prune -o -type f -perm -o=rwx
 #Searches all system, excluding specified dirs for files with others=rwx
 find / \(-path /proc -o -path /sys \) -prune -o -type f -perm -o=rwx
 
+#Searches for files with modified status or privileges in the last 7 days and ls them
+find / -type f -ctime -7 -exec ls -l {} \;
+
 ```
 {% endcode %}
+
+### Other searching mechanisms
+
+<pre class="language-bash" data-title="Syntax"><code class="lang-bash"><strong>which command       #Finds location of binaries in the $PATH
+</strong><strong>whereis command     #Finds location of binaries, its man page and source code in the whole system
+</strong><strong>
+</strong></code></pre>

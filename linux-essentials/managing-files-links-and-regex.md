@@ -343,7 +343,7 @@ od -x                #Converts to hexadecimal
 </strong></code></pre>
 {% endtab %}
 
-{% tab title="diff" %}
+{% tab title="diff & patch" %}
 ```bash
 diff file1 file2        #Prints the lines that are different between 2 files
 diff -y                 #Compares in two columns and marks with "|" the different lines
@@ -355,11 +355,20 @@ diff -u                 #Compares lines and n lines up and above and prints unif
 diff -l                 #Paginates output with "pr" as in ready to send to printer
 diff -r dir1 dir2       #Recursively compares file names inside directories specified
 diff -i                 #Ignore case differences
+diff -b                 #Ignore differences in the amount of blank space
 diff -E                 #Ignore differences due to TAB expansion
 diff -Z                 #Ignore white space at line end
 diff -a                 #Threat all files as text
 
-diff file1 file2 | grep "^[><] > diff.txt #Saves only the lines that are different into a new file
+diff file1 file2 | grep "^[><]" > diff.txt #Saves only the lines that are different into a new file
+
+#Patch
+#You can patch files with the X differences you specified in diff
+diff file1 file2 > resultdiff            #Save diferences into a new file !use parameters or is just a copy
+patch -i resultdiff file1                #Will patch the differences into file1
+patch file1 < resultdiff                 #Same as above
+patch -R file1 < resultdiff              #Reverse changes, anyways "patch" will generate a backup "file1.orig" each time you patch
+
 
 ```
 {% endtab %}
@@ -402,4 +411,55 @@ ln /route/file1 /route/file2 /destiny/route  #Creates multiple symbolic links in
 
 ## TAR & Compressing/Decompressing
 
-a
+When sending directories with lots of subdirectories and files to other systems, is best practice to group them to make your life and the one on the other side of the Ethernet cable easier, we have two types:
+
+* **TAR:** groups multiple items into a single item, usually called "tarball", it's like an archive but size remains the same.
+* **Compress:** AKA zipping, uses algorithms to remove redundancy on the items, therefore making them more compact, smaller, so they are easier to move over networks or to get stored
+
+In linux usually what we do is a combination of both, to get all the files grouped and then compressed, best of both worlds.
+
+{% hint style="info" %}
+Remember you have to write the extension ".tar.gz" or ".tgz" into the file, if you forget to it will work anyway, but can cause confussion.
+{% endhint %}
+
+{% code title="Syntax" %}
+```bash
+#TAR
+tar -cvf tarball.tar dir       #Archives the contents of /dir into a new file tarball.tar
+-c                              #Creates tarball
+-v                              #Verbose, shows what's going, what files got inside
+-f                              #Especifies next argument will be the tar file, always necessary
+tar -rvf tarball.tar newFile    #Appends another file into the existinr tar file
+tar -xvf tarball.tar            #E(x)tracts the contents of a tar file
+tar -xvkf tarball.tar           #Keep old files, don't replace existing files when extracting the same ones
+tar -tvf tarball.tar            #Lists the contents of a tar file, verbosed(same as ls -l)
+tar --delete -f tarbl.tar rdir/ #Removes specified dir from inside the tar
+tar --exclude="file1" -cvf ...  #Excludes from adding specified file/dir, regex available
+
+#Compression with TAR
+tar -cvzf tarball.tar.gz dir   #Also .tgz, creates a tar file then compresses it with gzip(GNU zip) algorithm
+tar -cvjf tarball.tar.bz2 dir  #Also .tbz2, creates a tar file then compresses it with bzip2 algorithm 
+tar -cvJf tarball.tar.xz dir   #Also .txz, creates a tar file then compresses it with xz algorihtm
+tar -xv<algorithm>f tarball.x  #Decompresses then extracts the tar file
+
+#Compression
+gzip file1                     #Compress file1
+gzip -d file1.gz               #Also gunzip, decompress file1
+gzip -n                        #Sets n speed/quality, -1 faster, -9 better, default 6
+gzip -k                        #Keep, don't delete original file after compressing
+
+#The other compression algorithms use the same parameters as gzip
+bzip2
+xz
+zstd 
+
+```
+{% endcode %}
+
+{% hint style="info" %}
+For small to medium files it's not important, but if you are into algorithms or min-maxing space, the overall consensus at 2023 looks like:
+
+zstd(`--zstd`) > xz(`J`) > bzip2(`j`) > gzip(`z`)
+
+But best compression tends to be slower tho, also gzip is most compatible, so don't worry too much.
+{% endhint %}

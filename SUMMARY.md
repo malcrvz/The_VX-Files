@@ -100,11 +100,11 @@
 ## 🐧 Linux Essentials
 
 * [1, 0, bits, Bytes: Units of digital information](linux-essentials/1-0-bits-bytes-units-of-digital-information.md)
-* [Managing files, links and regex](linux-essentials/managing-files-links-and-regex.md)
 * [Privileges & sudo](linux-essentials/privileges-and-sudo.md)
+* [Managing files, links and regex](linux-essentials/managing-files-links-and-regex.md)
+* [find](linux-essentials/find.md)
 * [User management](linux-essentials/user-management.md)
 * [Passwd & Shadow files](linux-essentials/passwd-and-shadow-files.md)
-* [find](linux-essentials/find.md)
 * [Terminal/TTY](linux-essentials/terminal-tty.md)
 
 ## 🪟 Windows Essentials
