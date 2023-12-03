@@ -152,9 +152,10 @@ find / -type f -ctime -7 -exec ls -l {} \;
 ```
 {% endcode %}
 
-### Other searching mechanisms
+### Other searching commands
 
 <pre class="language-bash" data-title="Syntax"><code class="lang-bash"><strong>which command       #Finds location of binaries in the $PATH
-</strong><strong>whereis command     #Finds location of binaries, its man page and source code in the whole system
+</strong>whereis command     #Finds location of binaries, its man page and source code in the whole system
+<strong>locate item         #Searches matching string through a pregenerated database on a periodic cronjob, simple but quick
 </strong><strong>
 </strong></code></pre>
