@@ -8,9 +8,7 @@
 ## 📕 Theory concepts
 
 * [Malware theory](theory-concepts/malware-theory/README.md)
-  * [Virus](theory-concepts/malware-theory/virus.md)
-  * [Worm](theory-concepts/malware-theory/worm.md)
-  * [Trojan](theory-concepts/malware-theory/trojan.md)
+  * [Viruses, worms and Trojans](theory-concepts/malware-theory/viruses-worms-and-trojans.md)
   * [Rootkit](theory-concepts/malware-theory/rootkit.md)
   * [Launcher](theory-concepts/malware-theory/launcher.md)
   * [Ransomware](theory-concepts/malware-theory/ransomware.md)

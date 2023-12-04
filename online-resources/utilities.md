@@ -17,13 +17,15 @@ layout:
 
 ### CyberChef
 
-{% hint style="info" %}
-```
 Web-based tool for rapidly decoding, encoding, analyzing, and transforming data.
-```
-{% endhint %}
 
 {% embed url="https://gchq.github.io/CyberChef/" %}
+
+### vx-underground
+
+Biggest free malware download database on the internet, also an awesome [community](https://twitter.com/vxunderground).
+
+{% embed url="https://vx-underground.org/" %}
 
 ***
 
@@ -31,9 +33,7 @@ Web-based tool for rapidly decoding, encoding, analyzing, and transforming data.
 
 ### Any Run
 
-{% hint style="info" %}
-Online sandbox for malware analysis
-{% endhint %}
+Online sandbox for malware analysis.
 
 {% embed url="https://app.any.run/" %}
 
@@ -41,9 +41,7 @@ Online sandbox for malware analysis
 
 ### GTFOBins
 
-{% hint style="info" %}
-List of commands and how they can be exploited through sudo
-{% endhint %}
+List of commands and how they can be exploited through sudo.
 
 {% embed url="https://gtfobins.github.io/" %}
 
@@ -51,9 +49,7 @@ List of commands and how they can be exploited through sudo
 
 ### LOLBAS
 
-{% hint style="info" %}
-List of binaries from Windows and how they can be exploited
-{% endhint %}
+List of binaries from Windows and how they can be exploited.
 
 {% embed url="https://lolbas-project.github.io" %}
 
@@ -63,8 +59,6 @@ List of binaries from Windows and how they can be exploited
 
 ### LOLOL (Living Off the Living Off the Land)
 
-{% hint style="info" %}
-Collection of resources related with exploits and vulnerabilities using software already in the victim system
-{% endhint %}
+Collection of resources related with exploits and vulnerabilities using software already in the victim system.
 
 {% embed url="https://lolol.farm/" %}
