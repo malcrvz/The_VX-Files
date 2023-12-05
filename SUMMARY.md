@@ -10,11 +10,11 @@
 
 * [Malware theory](theory-concepts/malware-theory/README.md)
   * [Viruses, worms and Trojans](theory-concepts/malware-theory/viruses-worms-and-trojans.md)
-  * [Backdoors, Rootkits, Launchers and Spyware](theory-concepts/malware-theory/backdoors-rootkits-launchers-and-spyware.md)
+  * [Backdoors, Rootkits and Spyware](theory-concepts/malware-theory/backdoors-rootkits-and-spyware.md)
   * [Botnets, DDoS and Spammer](theory-concepts/malware-theory/botnets-ddos-and-spammer.md)
   * [Ransomware](theory-concepts/malware-theory/ransomware.md)
   * [Scareware and Adware/PUP/PUA](theory-concepts/malware-theory/scareware-and-adware-pup-pua.md)
-  * [Downloader/Cabby](theory-concepts/malware-theory/downloader-cabby.md)
+  * [Downloaders and Launchers](theory-concepts/malware-theory/downloaders-and-launchers.md)
   * [Hacktool](theory-concepts/malware-theory/hacktool.md)
   * [APT - Advanced Persistent Threat](theory-concepts/malware-theory/apt-advanced-persistent-threat.md)
 * [Social engineering](theory-concepts/social-engineering/README.md)
