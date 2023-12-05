@@ -4,7 +4,7 @@
 
 * [README.txt](README.md)
 * [For updates, questions, suggestions or just chatting: @malcrvz](https://twitter.com/malcrvz)
-* [Download your own local copy and check my other libre projects on: Github/malcrvz](https://github.com/malcrvz)
+* [Download your own local copy or check my other libre projects: Github/malcrvz](https://github.com/malcrvz)
 
 ## 📕 Theory concepts
 
