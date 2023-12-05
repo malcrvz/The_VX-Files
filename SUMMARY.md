@@ -4,23 +4,19 @@
 
 * [README.txt](README.md)
 * [For updates, questions, suggestions or just chatting: @malcrvz](https://twitter.com/malcrvz)
+* [Download your own local copy and check my other libre projects on: Github/malcrvz](https://github.com/malcrvz)
 
 ## 📕 Theory concepts
 
 * [Malware theory](theory-concepts/malware-theory/README.md)
   * [Viruses, worms and Trojans](theory-concepts/malware-theory/viruses-worms-and-trojans.md)
-  * [Rootkit](theory-concepts/malware-theory/rootkit.md)
-  * [Launcher](theory-concepts/malware-theory/launcher.md)
+  * [Backdoors, Rootkits, Launchers and Spyware](theory-concepts/malware-theory/backdoors-rootkits-launchers-and-spyware.md)
+  * [Botnets, DDoS and Spammer](theory-concepts/malware-theory/botnets-ddos-and-spammer.md)
   * [Ransomware](theory-concepts/malware-theory/ransomware.md)
-  * [Backdoor](theory-concepts/malware-theory/backdoor.md)
-  * [APT - Advanced Persistent Threat](theory-concepts/malware-theory/apt-advanced-persistent-threat.md)
-  * [Spammer](theory-concepts/malware-theory/spammer.md)
-  * [Spyware](theory-concepts/malware-theory/spyware.md)
-  * [Botnet & DDoS](theory-concepts/malware-theory/botnet-and-ddos.md)
-  * [Scareware](theory-concepts/malware-theory/scareware.md)
+  * [Scareware and Adware/PUP/PUA](theory-concepts/malware-theory/scareware-and-adware-pup-pua.md)
   * [Downloader/Cabby](theory-concepts/malware-theory/downloader-cabby.md)
-  * [Adware/PUP/PUA](theory-concepts/malware-theory/adware-pup-pua.md)
   * [Hacktool](theory-concepts/malware-theory/hacktool.md)
+  * [APT - Advanced Persistent Threat](theory-concepts/malware-theory/apt-advanced-persistent-threat.md)
 * [Social engineering](theory-concepts/social-engineering/README.md)
   * [Phishing](theory-concepts/social-engineering/phishing.md)
   * [Pretexting](theory-concepts/social-engineering/pretexting.md)
