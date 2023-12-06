@@ -37,25 +37,13 @@ It's very effective since the victim will not suspect as he didn't click any lin
 
 ***
 
-### Clone Phishing
-
-dewfine
-
-***
-
-### Link Manipulation
-
-define
-
-***
-
 ### Watering Hole Attack
 
-define
+Derived from the analogy of predators waiting near watering holes to attack their prey, is an attack where the actors compromise a website that they know the victim will visit. When the victims visits the website as usual, they get infected with a malicious payload covertly. Although its not phishing in the classic way of tricking the victim into clicking a malicious link, still its more insidious as its based upon a victim clicking a link that's not even manipulated, but the whole website as a collateral victim
 
 ***
 
 ### Business Email Compromise (BEC)
 
-define
+BEC parts from an already compromised company email account, already from the inside, actors will easily impersonate the user of the account to escalate its way into high-profile accounts or directly steal data.
 

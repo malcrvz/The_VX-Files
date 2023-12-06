@@ -8,23 +8,23 @@
 
 ## 📕 Theory concepts
 
-* [Malware theory](theory-concepts/malware-theory/README.md)
-  * [Viruses, worms and Trojans](theory-concepts/malware-theory/viruses-worms-and-trojans.md)
-  * [Backdoors, Rootkits and Spyware](theory-concepts/malware-theory/backdoors-rootkits-and-spyware.md)
-  * [Botnets, DDoS and Spammer](theory-concepts/malware-theory/botnets-ddos-and-spammer.md)
-  * [Ransomware](theory-concepts/malware-theory/ransomware.md)
-  * [Scareware and Adware/PUP/PUA](theory-concepts/malware-theory/scareware-and-adware-pup-pua.md)
-  * [Downloaders and Launchers](theory-concepts/malware-theory/downloaders-and-launchers.md)
-  * [Hacktool](theory-concepts/malware-theory/hacktool.md)
-  * [APT - Advanced Persistent Threat](theory-concepts/malware-theory/apt-advanced-persistent-threat.md)
-* [Social engineering](theory-concepts/social-engineering/README.md)
-  * [Phishing](theory-concepts/social-engineering/phishing.md)
-  * [Pretexting](theory-concepts/social-engineering/pretexting.md)
-  * [Baiting](theory-concepts/social-engineering/baiting.md)
-  * [Quid pro quo](theory-concepts/social-engineering/quid-pro-quo.md)
-  * [Tailgating](theory-concepts/social-engineering/tailgating.md)
-* [Cryptography theory](theory-concepts/cryptography-theory/README.md)
-  * [Public-Key cryptography](theory-concepts/cryptography-theory/public-key-cryptography.md)
+* [Malware types](theory-concepts/malware-types/README.md)
+  * [Viruses, worms and Trojans](theory-concepts/malware-types/viruses-worms-and-trojans.md)
+  * [Backdoors, Rootkits and Spyware](theory-concepts/malware-types/backdoors-rootkits-and-spyware.md)
+  * [Botnets, DDoS and Spammer](theory-concepts/malware-types/botnets-ddos-and-spammer.md)
+  * [Ransomware](theory-concepts/malware-types/ransomware.md)
+  * [Scareware and Adware/PUP/PUA](theory-concepts/malware-types/scareware-and-adware-pup-pua.md)
+  * [Downloaders and Launchers](theory-concepts/malware-types/downloaders-and-launchers.md)
+  * [Hacktool](theory-concepts/malware-types/hacktool.md)
+  * [APT - Advanced Persistent Threat](theory-concepts/malware-types/apt-advanced-persistent-threat.md)
+* [Social engineering techniques](theory-concepts/social-engineering-techniques/README.md)
+  * [Phishing](theory-concepts/social-engineering-techniques/phishing.md)
+  * [Pretexting](theory-concepts/social-engineering-techniques/pretexting.md)
+  * [Baiting](theory-concepts/social-engineering-techniques/baiting.md)
+  * [Quid pro quo](theory-concepts/social-engineering-techniques/quid-pro-quo.md)
+  * [Tailgating](theory-concepts/social-engineering-techniques/tailgating.md)
+* [Cryptography concepts](theory-concepts/cryptography-concepts/README.md)
+  * [Public-Key cryptography](theory-concepts/cryptography-concepts/public-key-cryptography.md)
 * [Pentesting methodology & Techniques](theory-concepts/pentesting-methodology-and-techniques/README.md)
   * [Pre-Engagement](theory-concepts/pentesting-methodology-and-techniques/pre-engagement.md)
   * [Information Gathering](theory-concepts/pentesting-methodology-and-techniques/information-gathering/README.md)
@@ -111,6 +111,7 @@
 
 * [Windows CLI IP management](networking-essentials/windows-cli-ip-management.md)
 * [Linux IP management](networking-essentials/linux-ip-management.md)
+* [Linux CLI Wi-Fi connection](networking-essentials/linux-cli-wi-fi-connection.md)
 
 ## 🕷 Bash scripts
 
@@ -130,3 +131,7 @@
 * [Books & Wikis](online-resources/books-and-wikis.md)
 * [Utilities](online-resources/utilities.md)
 * [Interactive cheat sheets](online-resources/interactive-cheat-sheets.md)
+
+## 🟩 HTB Retired Machines walkthroughs
+
+* [coming soon](htb-retired-machines-walkthroughs/coming-soon.md)
