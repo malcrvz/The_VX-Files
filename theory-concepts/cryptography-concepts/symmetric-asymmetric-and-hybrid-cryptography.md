@@ -39,12 +39,11 @@ Recommended software for storage encryption [VeraCrypt](https://www.veracrypt.fr
 
 ### Asymmetric cryptography
 
-Also known as public key cryptography, used mostly for securing connections, is the cryptographic method of encrypting or signing data using two different but mathematically related keys, one will be public and the other private. \
-The public key will be shared with the world and the private will stay protected in our system. We will detail the process below but as a general definition: data encrypted with the public key will only be decrypted with the private key. This method is widely used, for example, in the TLS/SLL protocol which makes HTTPS connections possible.
+Also known as public key cryptography, used mostly for securing connections, is the cryptographic method of encrypting or signing data using two different but mathematically related keys, one will be called public and the other private. \
+Whatever data one key encrypts, only the other related key will be able to decrypt it.\
+The public key will be shared with the world and the private will stay protected in our system. This method is widely used, for example, in the TLS/SLL protocol which makes HTTPS connections possible.
 
-
-
-As we mentioned, public key encryption uses two different keys in the process. These keys are mathematically related but designed so that one of them can be shared freely (we call it public) and the other must be kept secret(we call it private).\
+\
 We will understand it better with the example of Bob and Alice:
 
 1. First Bob and Alice create a public/private key pair. In HTTPS connections for example, the keys are created automatically and will be temporary for an specific connection.
