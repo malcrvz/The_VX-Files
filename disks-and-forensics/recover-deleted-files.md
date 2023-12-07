@@ -5,7 +5,7 @@
 First of all we need to differentiate between deleting from "sending to trash bin".
 
 Sending a file to a trash bin simply puts the file into a special folder that will auto-delete files inside every N days, determined by a "cron job"/"task scheduler".\
-When a file is deleted the filesystem will update it's data structure, marking the inode (space occupied by the file) as free in the file system, meaning it's available to be over-written, but until it is done so, the files will still remain in the disk.\
+When a file is deleted the filesystem will update it's data structure, marking the inode as free in the file system, meaning it's available to be over-written, but until it is done so, the files will still remain in the disk.\
 
 
 ### Data recovering tools
@@ -19,7 +19,7 @@ They may use techniques like data carving that involves searching for specific f
 
 The effectiveness of file recovery depends on many factors, such as how much of the data has been overwritten, the filesystem format, the circumstances of the file deletion... If a file has been partially overwritten you may be able to recover it but only a part for example.
 
-To prevent a file from being overwritten it's crucial to stop or minimize disk activity the moment you realize you need to recover a file, avoid any type of file creation or modification and if you can turn off the system, boot with a live CD and run a data recovering tool on the partition you want to recover while it is unmounted for maximum effectivity.
+To prevent a file from being overwritten it's crucial to stop or minimize disk activity the moment you realize you need to recover a file, avoid any type of file creation or modification and if you can turn off the system, boot with a live CD and run a data recovering tool on the partition you want to recover while it is unmounted for maximum effectiveness.
 
 
 

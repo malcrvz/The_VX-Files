@@ -56,8 +56,8 @@
     * [Vector auto-enumeration scripts](baseline-pentesting/tools/6.-privilege-escalation-and-lateral-movement/vector-auto-enumeration-scripts.md)
   * [7. Reporting & Remediation](baseline-pentesting/tools/7.-reporting-and-remediation.md)
 * [Techniques](baseline-pentesting/techniques/README.md)
-  * [Default passwords](baseline-pentesting/techniques/default-passwords/README.md)
-    * [IP Cameras manufacturer default passwords](baseline-pentesting/techniques/default-passwords/ip-cameras-manufacturer-default-passwords.md)
+  * [Manufacturer default passwords lists](baseline-pentesting/techniques/manufacturer-default-passwords-lists/README.md)
+    * [IP Cameras](baseline-pentesting/techniques/manufacturer-default-passwords-lists/ip-cameras.md)
 
 ## 🕸 Network pentesting
 
@@ -118,11 +118,11 @@
 
 ## 🕷 Bash scripts
 
-* [Page 1](bash-scripts/page-1.md)
+* [coming soon](bash-scripts/coming-soon.md)
 
 ## ⚡ PowerShell Scripts
 
-* [Page 3](powershell-scripts/page-3.md)
+* [coming soon](powershell-scripts/coming-soon.md)
 
 ## 🏴☠ Download resources
 

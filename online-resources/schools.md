@@ -6,14 +6,12 @@ description: Online cybersecurity schools and academies
 
 ## Hands-on practice
 
-
-
 ### Hack the box
 
 {% hint style="info" %}
-Hack The Box: Labs, full of machines and walk[https://linuxjourney.com/](https://linuxjourney.com/)throughs to practice.
+Hack The Box: Labs, tons of machines and walkthroughs to practice.
 
-Hack The Box: Academy, full of courses with theory plus practice lessons.
+Hack The Box: Academy, quality courses with theory plus practice lessons.
 
 For beginners better to start on Academy since Labs can be too difficult at first.
 {% endhint %}
