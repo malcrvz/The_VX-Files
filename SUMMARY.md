@@ -27,6 +27,7 @@
   * [Symmetric, Asymmetric and Hybrid cryptography](theory-concepts/cryptography-concepts/symmetric-asymmetric-and-hybrid-cryptography.md)
   * [Digital signatures](theory-concepts/cryptography-concepts/digital-signatures.md)
   * [Digital certificates](theory-concepts/cryptography-concepts/digital-certificates.md)
+  * [TLS Protocol](theory-concepts/cryptography-concepts/tls-protocol.md)
   * [Hash functions](theory-concepts/cryptography-concepts/hash-functions.md)
 * [Pentesting methodology & Techniques](theory-concepts/pentesting-methodology-and-techniques/README.md)
   * [The methodology steps](theory-concepts/pentesting-methodology-and-techniques/the-methodology-steps.md)

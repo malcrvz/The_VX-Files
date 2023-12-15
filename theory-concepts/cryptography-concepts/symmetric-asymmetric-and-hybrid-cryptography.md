@@ -37,32 +37,47 @@ While others may be secure, I would always recommend AES as its the most adopted
 Recommended software for storage encryption [VeraCrypt](https://www.veracrypt.fr/en/Home.html)
 {% endhint %}
 
+***
+
 ### Asymmetric cryptography
 
 Also known as public key cryptography, used mostly for securing connections, is the cryptographic method of encrypting or signing data using two different but mathematically related keys, one will be called public and the other private. \
 Whatever data one key encrypts, only the other related key will be able to decrypt it.\
-The public key will be shared with the world and the private will stay protected in our system. This method is widely used, for example, in the TLS/SLL protocol which makes HTTPS connections possible.
+The public key will be shared with the world and the private will stay protected in our system. This method is widely used on all communications, for example, in the TLS protocol which makes HTTPS connections possible.
 
 \
-Again our friends Bob and Alice:
+Again, its easier with our friends Bob and Alice:
 
-1. First Bob and Alice create a public/private key pair. In HTTPS connections for example, the keys are created automatically and will be temporary for an specific connection.
-2. Then Bob and Alice interchange public keys. Because they are worthless without its private counterpart you can send them all over the internet.
-3. Now that keys are shared in each other systems, Alice will write a message, encrypt it using Bob's public key, and send it over. This means no other key than Bob's private can decrypt that message, and that private key is never shared. So no matter who is eavesdropping the connection, all they will see is gibberish.&#x20;
-4. Bob receives the message, decrypts and reads it. He then decides to respond so he writes a message and encrypts it with Alice's public key, and sends it over, repeating the process.
+1. First Bob and Alice create a public/private key pair in their own system. In HTTPS connections for example, the keys are created automatically and will be temporary for an specific connection.
+2. Then Bob and Alice interchange public keys. Because they are worthless without its private counterpart they can be sent all over the internet and even posted on their social media.
+3. Now that public keys are shared and in each other systems, Alice will write a message, encrypt it using Bob's public key, and sent over to Bob. This means no other key than Bob's private can decrypt that message, and that private key is never shared. So no matter who is eavesdropping the connection, all they will see is gibberish.&#x20;
+4. Bob receives the encrypted message, decrypts and reads it. He then decides to respond so he writes a message and encrypts it with Alice's public key, and sends it over, repeating the process.
 
 Real life has extra steps, signs and certificates involved, we will see them little by little in next pages.
 
 <figure><img src="../../.gitbook/assets/publicKey_Cryptography.jpeg" alt=""><figcaption><p>source: <a href="https://twitter.com/kosamari/status/838738015010848769">https://twitter.com/kosamari/status/838738015010848769</a> </p></figcaption></figure>
 
-
-
 {% hint style="info" %}
-RSA algoritmo explicar
+RSA ([Rivest](https://en.wikipedia.org/wiki/Ron\_Rivest)-[Shamir](https://en.wikipedia.org/wiki/Adi\_Shamir)-[Adleman](https://en.wikipedia.org/wiki/Leonard\_Adleman)) is the standard asymmetric algorithm used as of 2023 and has been for decades. The security is based on the difficulty of factoring the product of two large prime numbers. Something not even computers can quickly calculate.&#x20;
 {% endhint %}
 
-
+***
 
 ### Hybrid cryptography
 
-Also called hybrid cryptosystem, is&#x20;
+Also called hybrid cryptosystem, is an approach that combines the strengths of both symmetric and asymmetric systems. Its ideal for transmitting big data or create faster communication as once the symmetric key is shared securely the asymmetric is no longer needed.&#x20;
+
+Transmitting big files with Bob and Alice:
+
+1. First Bob and Alice generate an asymmetric key pair and share the public one. But only Bob generates a symmetric key.
+2. Bob then proceeds to encrypt the big file with the symmetric key, way faster.
+3. Bob then, encrypts the symmetric key with Alice's public key, making it secure for the transfer.
+4. Bob sends both the asymmetric encrypted key and the symmetric encrypted data to Alice, both things are encrypted and secure.
+5. Now Alice uses his private key to decrypt the symmetric key then uses it to decrypt the big file, way faster than with asymmetric cryptography.
+
+Notice how now both have a symmetric key they only know in their systems, this is called "symmetric key exchange" and with extra steps, its used in TLS the protocol that makes HTTPS possible. \
+"HTTPS = HTTP + TLS"\
+We will see and understand the whole protocol in next pages.\
+
+
+<figure><img src="../../.gitbook/assets/hybridCryptography.png" alt=""><figcaption><p>source: <a href="https://livebook.manning.com/book/real-world-cryptography/chapter-6/v-14/181">https://livebook.manning.com/book/real-world-cryptography/chapter-6/v-14/181</a> </p></figcaption></figure>
