@@ -24,7 +24,7 @@ By default users have ownership of the item they create and the group assigned w
 
 If user is deleted file will still be property of the user, though it will show used UID and GUID of the late user.
 
-<figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption><p>source: linuxcommand.org </p></figcaption></figure>
+<figure><img src="../.gitbook/assets/rwxrwxrwx.png" alt=""><figcaption><p>source: linuxcommand.org </p></figcaption></figure>
 
 <pre class="language-bash" data-title="Syntax"><code class="lang-bash">#Numeric mode chart
 7 == rwx

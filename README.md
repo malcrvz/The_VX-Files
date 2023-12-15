@@ -26,7 +26,9 @@ layout:
 
 ***
 
-<pre data-title="README.txt" data-line-numbers><code>
+{% code title="README.txt" lineNumbers="true" %}
+```
+
 ▄▄▄█████▓██░ ██▓█████     ██▒   █▒██   ██▒     █████▒██▓ ██▓    ▓█████   ██████ 
 ▓  ██▒ ▓▓██░ ██▓█   ▀    ▓██░   █▒▒ █ █ ▒░   ▓██   ▒▓██▒▓██▒    ▓█   ▀ ▒██    ▒ 
 ▒ ▓██░ ▒▒██▀▀██▒███       ▓██  █▒░░  █   ░▄▄▄▒████ ░▒██▒▒██░    ▒███   ░ ▓██▄   
@@ -41,7 +43,7 @@ by @malcrvz
 Proyect started on All Hallows' Eve of 2023
 
 
-Welcome to my ethical hacking notebook &#x3C;3
+Welcome to my ethical hacking notebook <3
 
 Cheat sheets, down to earth definitions and guides!
 If you are on GitHub switch to GitBook, so much pretty! Link in "About".
@@ -50,10 +52,11 @@ Keep in mind it's just one dude, there will be errors, always check your sources
 Also english is not my native language so sorry for possible misspellings.
 
 The notebook assumes you have basic(not much) understanding on computer science.
-Getting a small IT degree/cert >may&#x3C; be preferable before diving into infosec.
-<strong>I hope my proyect helps you, but I can't recommend enough to create your own.
-</strong><strong>Teaching is the fastest way to learn, and sharing is caring!
-</strong><strong>If this helps you in any way, please reach, it would make my day!
-</strong>
+Getting a small IT degree/cert >may< be preferable before diving into infosec.
+I hope my proyect helps you, but I can't recommend enough to create your own.
+Teaching is the fastest way to learn, and sharing is caring!
+If this helps you in any way, please reach, it would make my day!
+
 GPL-3.0 license, do whatever you want but keep it free.
-</code></pre>
+```
+{% endcode %}

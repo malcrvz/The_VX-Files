@@ -29,6 +29,7 @@
   * [Digital certificates](theory-concepts/cryptography-concepts/digital-certificates.md)
   * [Hash functions](theory-concepts/cryptography-concepts/hash-functions.md)
 * [Pentesting methodology & Techniques](theory-concepts/pentesting-methodology-and-techniques/README.md)
+  * [The methodology steps](theory-concepts/pentesting-methodology-and-techniques/the-methodology-steps.md)
   * [Pre-Engagement](theory-concepts/pentesting-methodology-and-techniques/pre-engagement.md)
   * [Information Gathering](theory-concepts/pentesting-methodology-and-techniques/information-gathering/README.md)
     * [HTTP status codes](theory-concepts/pentesting-methodology-and-techniques/information-gathering/http-status-codes.md)
@@ -37,8 +38,7 @@
   * [Exploitation](theory-concepts/pentesting-methodology-and-techniques/exploitation.md)
   * [Post-Exploitation & Persistence](theory-concepts/pentesting-methodology-and-techniques/post-exploitation-and-persistence/README.md)
     * [Types of Shells](theory-concepts/pentesting-methodology-and-techniques/post-exploitation-and-persistence/types-of-shells.md)
-  * [Privilege Escalation & Lateral Movement](theory-concepts/pentesting-methodology-and-techniques/privilege-escalation-and-lateral-movement/README.md)
-    * [General definition](theory-concepts/pentesting-methodology-and-techniques/privilege-escalation-and-lateral-movement/general-definition.md)
+  * [Privilege Escalation & Lateral Movement](theory-concepts/pentesting-methodology-and-techniques/privilege-escalation-and-lateral-movement.md)
   * [Reporting & Remediation](theory-concepts/pentesting-methodology-and-techniques/reporting-and-remediation.md)
 
 ## 🗝 Baseline Pentesting
@@ -135,6 +135,6 @@
 * [Utilities](online-resources/utilities.md)
 * [Interactive cheat sheets](online-resources/interactive-cheat-sheets.md)
 
-## 🟩 HTB Retired Machines walkthroughs
+## 🛠 Unfinished || Coming soon
 
-* [coming soon](htb-retired-machines-walkthroughs/coming-soon.md)
+* [Idea bank](unfinished-or-or-coming-soon/idea-bank.md)
