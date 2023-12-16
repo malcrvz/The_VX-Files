@@ -8,7 +8,7 @@ Different key strings will produce different outputs. \
 The same key string will always produce the same output.\
 It can be understood basically as a password because only that key will recover the data to its original state. \
 \
-We will understand better with the example of Bob and Alice:
+We will understand better with the classic example of [Alice and Bob](https://en.wikipedia.org/wiki/Alice\_and\_Bob):
 
 1. Suppose Bob wants to send the following secret message: "Tonight meeting at the docks" to Alice.
 2. Using specialized software that executes an encryption algorithm, for example AES, Bob encrypts the text file with the following key: "myStr0ngP4ssw0rd1".
@@ -46,7 +46,7 @@ Whatever data one key encrypts, only the other related key will be able to decry
 The public key will be shared with the world and the private will stay protected in our system. This method is widely used on all communications, for example, in the TLS protocol which makes HTTPS connections possible.
 
 \
-Again, its easier with our friends Bob and Alice:
+Again, its easier with our friends Alice and Bob:
 
 1. First Bob and Alice create a public/private key pair in their own system. In HTTPS connections for example, the keys are created automatically and will be temporary for an specific connection.
 2. Then Bob and Alice interchange public keys. Because they are worthless without its private counterpart they can be sent all over the internet and even posted on their social media.
@@ -65,17 +65,17 @@ RSA ([Rivest](https://en.wikipedia.org/wiki/Ron\_Rivest)-[Shamir](https://en.wik
 
 ### Hybrid cryptography
 
-Also called hybrid cryptosystem, is an approach that combines the strengths of both symmetric and asymmetric systems. Its ideal for transmitting big data or create faster communication as once the symmetric key is shared securely the asymmetric is no longer needed.&#x20;
+Also called hybrid cryptosystem, is an approach that combines the strengths of both symmetric and asymmetric systems. Its ideal for transmitting big data or creating faster secure communications as once the symmetric key is shared the asymmetric is no longer needed. It consists on using asymmetric cryptography to encrypt a symmetric key that will be then sent and used for normal data encryption/decryption. We will understand again with an example.
 
-Transmitting big files with Bob and Alice:
+Transmitting big files with Alice and Bob:
 
 1. First Bob and Alice generate an asymmetric key pair and share the public one. But only Bob generates a symmetric key.
 2. Bob then proceeds to encrypt the big file with the symmetric key, way faster.
 3. Bob then, encrypts the symmetric key with Alice's public key, making it secure for the transfer.
-4. Bob sends both the asymmetric encrypted key and the symmetric encrypted data to Alice, both things are encrypted and secure.
-5. Now Alice uses his private key to decrypt the symmetric key then uses it to decrypt the big file, way faster than with asymmetric cryptography.
+4. Bob sends both the asymmetric encrypted symmetric key and the symmetric encrypted data to Alice, both things are encrypted and secure.
+5. Now Alice uses his private key to decrypt the symmetric key then uses it to decrypt the big file, way faster than using only asymmetric cryptography.
 
-Notice how now both have a symmetric key they only know in their systems, this is called "symmetric key exchange" and with extra steps, its used in TLS the protocol that makes HTTPS possible. \
+Notice how now both have a symmetric key they only know in their systems, this is called "symmetric key exchange" and with extra steps, its called TLS protocol, the one that makes HTTPS possible. \
 "HTTPS = HTTP + TLS"\
 We will see and understand the whole protocol in next pages.\
 
