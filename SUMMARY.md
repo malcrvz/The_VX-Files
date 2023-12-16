@@ -23,12 +23,11 @@
   * [Baiting](theory-concepts/social-engineering-techniques/baiting.md)
   * [Quid pro quo](theory-concepts/social-engineering-techniques/quid-pro-quo.md)
   * [Tailgating](theory-concepts/social-engineering-techniques/tailgating.md)
-* [Cryptography concepts](theory-concepts/cryptography-concepts/README.md)
-  * [Symmetric, Asymmetric and Hybrid cryptography](theory-concepts/cryptography-concepts/symmetric-asymmetric-and-hybrid-cryptography.md)
-  * [Digital signatures](theory-concepts/cryptography-concepts/digital-signatures.md)
-  * [Digital certificates](theory-concepts/cryptography-concepts/digital-certificates.md)
-  * [TLS Protocol](theory-concepts/cryptography-concepts/tls-protocol.md)
-  * [Hash functions](theory-concepts/cryptography-concepts/hash-functions.md)
+* [Cryptography](theory-concepts/cryptography/README.md)
+  * [Symmetric, Asymmetric and Hybrid cryptography](theory-concepts/cryptography/symmetric-asymmetric-and-hybrid-cryptography.md)
+  * [Digital signatures & Digital certificates](theory-concepts/cryptography/digital-signatures-and-digital-certificates.md)
+  * [TLS Protocol](theory-concepts/cryptography/tls-protocol.md)
+  * [Hash functions](theory-concepts/cryptography/hash-functions.md)
 * [Pentesting methodology & Techniques](theory-concepts/pentesting-methodology-and-techniques/README.md)
   * [The methodology steps](theory-concepts/pentesting-methodology-and-techniques/the-methodology-steps.md)
   * [Pre-Engagement](theory-concepts/pentesting-methodology-and-techniques/pre-engagement.md)
@@ -41,6 +40,7 @@
     * [Types of Shells](theory-concepts/pentesting-methodology-and-techniques/post-exploitation-and-persistence/types-of-shells.md)
   * [Privilege Escalation & Lateral Movement](theory-concepts/pentesting-methodology-and-techniques/privilege-escalation-and-lateral-movement.md)
   * [Reporting & Remediation](theory-concepts/pentesting-methodology-and-techniques/reporting-and-remediation.md)
+* [CIA Triad - Confidentiality, Integrity & Availability](theory-concepts/cia-triad-confidentiality-integrity-and-availability.md)
 
 ## 🗝 Baseline Pentesting
 

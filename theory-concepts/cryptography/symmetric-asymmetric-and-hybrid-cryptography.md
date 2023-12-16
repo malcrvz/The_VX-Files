@@ -1,5 +1,7 @@
 # Symmetric, Asymmetric and Hybrid cryptography
 
+In this page we will focus on how cryptography is used to provide [confidentiality.](../cia-triad-confidentiality-integrity-and-availability.md)&#x20;
+
 ### Symmetric cryptography
 
 Also known as private key cryptography, is characterized for using the same key for both encryption and decryption of data. \
