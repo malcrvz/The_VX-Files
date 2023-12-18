@@ -105,6 +105,7 @@
 * [User management](linux-essentials/user-management.md)
 * [Passwd & Shadow files](linux-essentials/passwd-and-shadow-files.md)
 * [Terminal/TTY](linux-essentials/terminal-tty.md)
+* [ssh & key pair](linux-essentials/ssh-and-key-pair.md)
 
 ## 🪟 Windows Essentials
 
