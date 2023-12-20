@@ -51,6 +51,7 @@
   * [3. Vulnerability assessment](baseline-pentesting/tools/3.-vulnerability-assessment.md)
   * [4. Exploitation](baseline-pentesting/tools/4.-exploitation/README.md)
     * [Metasploit](baseline-pentesting/tools/4.-exploitation/metasploit.md)
+    * [Hashcat](baseline-pentesting/tools/4.-exploitation/hashcat.md)
   * [5. Post-Exploitation & Persistence](baseline-pentesting/tools/5.-post-exploitation-and-persistence.md)
   * [6. Privilege escalation & Lateral movement](baseline-pentesting/tools/6.-privilege-escalation-and-lateral-movement/README.md)
     * [Possible vectors](baseline-pentesting/tools/6.-privilege-escalation-and-lateral-movement/possible-vectors.md)
@@ -59,6 +60,7 @@
 * [Techniques](baseline-pentesting/techniques/README.md)
   * [Manufacturer default passwords lists](baseline-pentesting/techniques/manufacturer-default-passwords-lists/README.md)
     * [IP Cameras](baseline-pentesting/techniques/manufacturer-default-passwords-lists/ip-cameras.md)
+  * [Password cracking](baseline-pentesting/techniques/password-cracking.md)
 
 ## 🕸 Network pentesting
 
