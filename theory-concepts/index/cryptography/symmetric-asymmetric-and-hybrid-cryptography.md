@@ -1,6 +1,6 @@
 # Symmetric, Asymmetric and Hybrid cryptography
 
-In this page we will focus on how cryptography is used to provide [confidentiality.](../cia-triad-confidentiality-integrity-and-availability.md)&#x20;
+In this page we will focus on how cryptography is used to provide [confidentiality.](../pentesting-methodology-and-techniques/cia-triad-confidentiality-integrity-and-availability.md)&#x20;
 
 ### Symmetric cryptography
 
@@ -57,7 +57,7 @@ Again, its easier with our friends Alice and Bob:
 
 Real life has extra steps, signs and certificates involved, we will see them little by little in next pages.
 
-<figure><img src="../../.gitbook/assets/publicKey_Cryptography.jpeg" alt=""><figcaption><p>source: <a href="https://twitter.com/kosamari/status/838738015010848769">https://twitter.com/kosamari/status/838738015010848769</a> </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/publicKey_Cryptography.jpeg" alt=""><figcaption><p>source: <a href="https://twitter.com/kosamari/status/838738015010848769">https://twitter.com/kosamari/status/838738015010848769</a> </p></figcaption></figure>
 
 {% hint style="info" %}
 RSA ([Rivest](https://en.wikipedia.org/wiki/Ron\_Rivest)-[Shamir](https://en.wikipedia.org/wiki/Adi\_Shamir)-[Adleman](https://en.wikipedia.org/wiki/Leonard\_Adleman)) is the standard asymmetric algorithm used as of 2023 and has been for decades. The security is based on the difficulty of factoring the product of two large prime numbers. Something not even computers can quickly calculate.&#x20;
@@ -82,4 +82,4 @@ Notice how now both have a symmetric key they only know in their systems, this i
 We will see and understand the whole protocol in next pages.\
 
 
-<figure><img src="../../.gitbook/assets/hybridCryptography.png" alt=""><figcaption><p>source: <a href="https://livebook.manning.com/book/real-world-cryptography/chapter-6/v-14/181">https://livebook.manning.com/book/real-world-cryptography/chapter-6/v-14/181</a> </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/hybridCryptography.png" alt=""><figcaption><p>source: <a href="https://livebook.manning.com/book/real-world-cryptography/chapter-6/v-14/181">https://livebook.manning.com/book/real-world-cryptography/chapter-6/v-14/181</a> </p></figcaption></figure>

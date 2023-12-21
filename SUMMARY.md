@@ -8,39 +8,40 @@
 
 ## 📕 Theory concepts
 
-* [Malware types](theory-concepts/malware-types/README.md)
-  * [Viruses, worms and Trojans](theory-concepts/malware-types/viruses-worms-and-trojans.md)
-  * [Backdoors, Rootkits and Spyware](theory-concepts/malware-types/backdoors-rootkits-and-spyware.md)
-  * [Botnets, DDoS and Spammer](theory-concepts/malware-types/botnets-ddos-and-spammer.md)
-  * [Ransomware](theory-concepts/malware-types/ransomware.md)
-  * [Scareware and Adware/PUP/PUA](theory-concepts/malware-types/scareware-and-adware-pup-pua.md)
-  * [Downloaders and Launchers](theory-concepts/malware-types/downloaders-and-launchers.md)
-  * [Hacktool](theory-concepts/malware-types/hacktool.md)
-  * [APT - Advanced Persistent Threat](theory-concepts/malware-types/apt-advanced-persistent-threat.md)
-* [Social engineering techniques](theory-concepts/social-engineering-techniques/README.md)
-  * [Phishing](theory-concepts/social-engineering-techniques/phishing.md)
-  * [Pretexting](theory-concepts/social-engineering-techniques/pretexting.md)
-  * [Baiting](theory-concepts/social-engineering-techniques/baiting.md)
-  * [Quid pro quo](theory-concepts/social-engineering-techniques/quid-pro-quo.md)
-  * [Tailgating](theory-concepts/social-engineering-techniques/tailgating.md)
-* [Cryptography](theory-concepts/cryptography/README.md)
-  * [Hash functions](theory-concepts/cryptography/hash-functions.md)
-  * [Symmetric, Asymmetric and Hybrid cryptography](theory-concepts/cryptography/symmetric-asymmetric-and-hybrid-cryptography.md)
-  * [Digital signatures & Digital certificates](theory-concepts/cryptography/digital-signatures-and-digital-certificates.md)
-  * [TLS Protocol](theory-concepts/cryptography/tls-protocol.md)
-* [Pentesting methodology & Techniques](theory-concepts/pentesting-methodology-and-techniques/README.md)
-  * [The methodology steps](theory-concepts/pentesting-methodology-and-techniques/the-methodology-steps.md)
-  * [Pre-Engagement](theory-concepts/pentesting-methodology-and-techniques/pre-engagement.md)
-  * [Information Gathering](theory-concepts/pentesting-methodology-and-techniques/information-gathering/README.md)
-    * [HTTP status codes](theory-concepts/pentesting-methodology-and-techniques/information-gathering/http-status-codes.md)
-    * [robots.txt](theory-concepts/pentesting-methodology-and-techniques/information-gathering/robots.txt.md)
-  * [Vulnerability Assessment](theory-concepts/pentesting-methodology-and-techniques/vulnerability-assessment.md)
-  * [Exploitation](theory-concepts/pentesting-methodology-and-techniques/exploitation.md)
-  * [Post-Exploitation & Persistence](theory-concepts/pentesting-methodology-and-techniques/post-exploitation-and-persistence/README.md)
-    * [Types of Shells](theory-concepts/pentesting-methodology-and-techniques/post-exploitation-and-persistence/types-of-shells.md)
-  * [Privilege Escalation & Lateral Movement](theory-concepts/pentesting-methodology-and-techniques/privilege-escalation-and-lateral-movement.md)
-  * [Reporting & Remediation](theory-concepts/pentesting-methodology-and-techniques/reporting-and-remediation.md)
-* [CIA Triad - Confidentiality, Integrity & Availability](theory-concepts/cia-triad-confidentiality-integrity-and-availability.md)
+* [Index](theory-concepts/index/README.md)
+  * [Malware types](theory-concepts/index/malware-types/README.md)
+    * [Viruses, worms and Trojans](theory-concepts/index/malware-types/viruses-worms-and-trojans.md)
+    * [Backdoors, Rootkits and Spyware](theory-concepts/index/malware-types/backdoors-rootkits-and-spyware.md)
+    * [Botnets, DDoS and Spammer](theory-concepts/index/malware-types/botnets-ddos-and-spammer.md)
+    * [Ransomware](theory-concepts/index/malware-types/ransomware.md)
+    * [Scareware and Adware/PUP/PUA](theory-concepts/index/malware-types/scareware-and-adware-pup-pua.md)
+    * [Downloaders and Launchers](theory-concepts/index/malware-types/downloaders-and-launchers.md)
+    * [Hacktool](theory-concepts/index/malware-types/hacktool.md)
+    * [APT - Advanced Persistent Threat](theory-concepts/index/malware-types/apt-advanced-persistent-threat.md)
+  * [Social engineering techniques](theory-concepts/index/social-engineering-techniques/README.md)
+    * [Phishing](theory-concepts/index/social-engineering-techniques/phishing.md)
+    * [Pretexting](theory-concepts/index/social-engineering-techniques/pretexting.md)
+    * [Baiting](theory-concepts/index/social-engineering-techniques/baiting.md)
+    * [Quid pro quo](theory-concepts/index/social-engineering-techniques/quid-pro-quo.md)
+    * [Tailgating](theory-concepts/index/social-engineering-techniques/tailgating.md)
+  * [Cryptography](theory-concepts/index/cryptography/README.md)
+    * [Hash functions](theory-concepts/index/cryptography/hash-functions.md)
+    * [Symmetric, Asymmetric and Hybrid cryptography](theory-concepts/index/cryptography/symmetric-asymmetric-and-hybrid-cryptography.md)
+    * [Digital signatures & Digital certificates](theory-concepts/index/cryptography/digital-signatures-and-digital-certificates.md)
+    * [TLS Protocol](theory-concepts/index/cryptography/tls-protocol.md)
+  * [Pentesting methodology & Techniques](theory-concepts/index/pentesting-methodology-and-techniques/README.md)
+    * [CIA Triad - Confidentiality, Integrity & Availability](theory-concepts/index/pentesting-methodology-and-techniques/cia-triad-confidentiality-integrity-and-availability.md)
+    * [The methodology steps](theory-concepts/index/pentesting-methodology-and-techniques/the-methodology-steps.md)
+    * [Pre-Engagement](theory-concepts/index/pentesting-methodology-and-techniques/pre-engagement.md)
+    * [Information Gathering](theory-concepts/index/pentesting-methodology-and-techniques/information-gathering/README.md)
+      * [HTTP status codes](theory-concepts/index/pentesting-methodology-and-techniques/information-gathering/http-status-codes.md)
+      * [robots.txt](theory-concepts/index/pentesting-methodology-and-techniques/information-gathering/robots.txt.md)
+    * [Vulnerability Assessment](theory-concepts/index/pentesting-methodology-and-techniques/vulnerability-assessment.md)
+    * [Exploitation](theory-concepts/index/pentesting-methodology-and-techniques/exploitation.md)
+    * [Post-Exploitation & Persistence](theory-concepts/index/pentesting-methodology-and-techniques/post-exploitation-and-persistence/README.md)
+      * [Types of Shells](theory-concepts/index/pentesting-methodology-and-techniques/post-exploitation-and-persistence/types-of-shells.md)
+    * [Privilege Escalation & Lateral Movement](theory-concepts/index/pentesting-methodology-and-techniques/privilege-escalation-and-lateral-movement.md)
+    * [Reporting & Remediation](theory-concepts/index/pentesting-methodology-and-techniques/reporting-and-remediation.md)
 
 ## 🗝 Baseline Pentesting
 
@@ -59,9 +60,10 @@
     * [Vector auto-enumeration scripts](baseline-pentesting/tools/6.-privilege-escalation-and-lateral-movement/vector-auto-enumeration-scripts.md)
   * [7. Reporting & Remediation](baseline-pentesting/tools/7.-reporting-and-remediation.md)
 * [Techniques](baseline-pentesting/techniques/README.md)
-  * [Manufacturer default passwords lists](baseline-pentesting/techniques/manufacturer-default-passwords-lists/README.md)
-    * [IP Cameras](baseline-pentesting/techniques/manufacturer-default-passwords-lists/ip-cameras.md)
   * [Password cracking](baseline-pentesting/techniques/password-cracking.md)
+* [Resources](baseline-pentesting/resources/README.md)
+  * [Manufacturer default passwords lists](baseline-pentesting/resources/manufacturer-default-passwords-lists/README.md)
+    * [IP Cameras](baseline-pentesting/resources/manufacturer-default-passwords-lists/ip-cameras.md)
 
 ## 🕸 Network pentesting
 
@@ -71,7 +73,8 @@
   * [smbclient](network-pentesting/tools/smbclient.md)
   * [OpenVPN](network-pentesting/tools/openvpn.md)
 * [Techniques](network-pentesting/techniques.md)
-* [Get Shells scripts](network-pentesting/get-shells-scripts.md)
+* [Resources](network-pentesting/resources/README.md)
+  * [Get Shells scripts](network-pentesting/resources/get-shells-scripts.md)
 
 ## 💉 Web App pentesting
 
@@ -80,24 +83,30 @@
   * [cURL](web-app-pentesting/tools/curl.md)
   * [Whatweb](web-app-pentesting/tools/whatweb.md)
 * [Techniques](web-app-pentesting/techniques.md)
-* [Web Shells](web-app-pentesting/web-shells.md)
+* [Resources](web-app-pentesting/resources/README.md)
+  * [Web Shells](web-app-pentesting/resources/web-shells.md)
 
 ## 📡 Wireless pentesting
 
 * [Tools](wireless-pentesting/tools.md)
 * [Techniques](wireless-pentesting/techniques.md)
+* [Resources](wireless-pentesting/resources.md)
 
 ## 🔓 On-Premises Pentesting
 
-* [Removing Linux user passwords](on-premises-pentesting/removing-linux-user-passwords.md)
-* [Removing Windows user passwords](on-premises-pentesting/removing-windows-user-passwords.md)
+* [Tools](on-premises-pentesting/tools.md)
+* [Techniques](on-premises-pentesting/techniques/README.md)
+  * [Removing Linux user passwords](on-premises-pentesting/techniques/removing-linux-user-passwords.md)
+  * [Removing Windows user passwords](on-premises-pentesting/techniques/removing-windows-user-passwords.md)
+* [Resources](on-premises-pentesting/resources.md)
 
 ## 💽 Disks & Forensics&#x20;
 
-* [Getting a disk ready](disks-and-forensics/getting-a-disk-ready.md)
-* [Inodes & Sectors](disks-and-forensics/inodes-and-sectors.md)
-* [Recover deleted files](disks-and-forensics/recover-deleted-files.md)
-* [Secure file deletion](disks-and-forensics/secure-file-deletion.md)
+* [Index](disks-and-forensics/index/README.md)
+  * [Getting a disk ready](disks-and-forensics/index/getting-a-disk-ready.md)
+  * [Inodes & Sectors](disks-and-forensics/index/inodes-and-sectors.md)
+  * [Recover deleted files](disks-and-forensics/index/recover-deleted-files.md)
+  * [BUILDING - Secure file deletion](disks-and-forensics/index/building-secure-file-deletion.md)
 
 ## 🐧 Linux Essentials
 

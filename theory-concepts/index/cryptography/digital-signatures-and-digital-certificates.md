@@ -2,7 +2,7 @@
 
 ### Digital signatures
 
-Digital signatures use encryption techniques not to hide data([Confidentiality](../cia-triad-confidentiality-integrity-and-availability.md)) but to verify the authenticity and integrity of the data sent over a network. It also has the purpose of creating non-repudiation, meaning that once signed and sent, the user can't deny sending the message. \
+Digital signatures use encryption techniques not to hide data([Confidentiality](../pentesting-methodology-and-techniques/cia-triad-confidentiality-integrity-and-availability.md)) but to verify the authenticity and integrity of the data sent over a network. It also has the purpose of creating non-repudiation, meaning that once signed and sent, the user can't deny sending the message. \
 The process involves [asymmetric cryptography](symmetric-asymmetric-and-hybrid-cryptography.md) and [hashing](hash-functions.md) to sign the data with an unique mathematical "name" or "code" that can't be changed. Think of it like a DNI for each file or message that demonstrates that the owner is who it says it is.\
 If a user wants to send a message using only data encryption, sure, nobody will read it, but a man-in-the-middle attack could intercept the message, stop it, create a new one using its own key pair and send it to the destination passing as if its encrypted by the original user. This is a goldmine for scammers. But this vulnerability is remediated by digital signature.\
 
@@ -18,7 +18,7 @@ Once again we will use our friends Alice and Bob for easier explanation, we will
    If the hash digest of the message and the signature match, it means the message is exactly the same and conserves its full integrity.\
    They matching also creates non-repudiation. Bob can't deny sending that message. Only his private key could have encrypted that matching hash digest.
 
-<figure><img src="../../.gitbook/assets/digitalSignature.png" alt=""><figcaption><p>source: (Sunny Classroom) <a href="https://www.youtube.com/watch?v=TmA2QWSLSPg">https://www.youtube.com/watch?v=TmA2QWSLSPg</a> </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/digitalSignature.png" alt=""><figcaption><p>source: (Sunny Classroom) <a href="https://www.youtube.com/watch?v=TmA2QWSLSPg">https://www.youtube.com/watch?v=TmA2QWSLSPg</a> </p></figcaption></figure>
 
 But this still has a big vulnerability, how do we know its the true public key of Bob? Digital signature alone can't prove authenticity, since the public key is available for anyone, usually in a public server, a man-in-the-middle attack could intercept the message, the bad actor throws the original message away and sends its own, redirecting Alice to his own "pretending to be Bob" public key. Alice receives the message and everything looks correct, the hash and the signature match. But it's not coming from the private key of Bob but from the bad actor, we need a step further. \
 \
@@ -41,7 +41,7 @@ We call this third party trust organization Certificate Authority (CA). They can
 
 <div align="center">
 
-<figure><img src="../../.gitbook/assets/third_party_trust.png" alt="" width="563"><figcaption><p>source: <a href="https://www.networkacademy.io/ccie-enterprise/sdwan/cisco-sd-wan-certificates-explained">https://www.networkacademy.io/ccie-enterprise/sdwan/cisco-sd-wan-certificates-explained</a> </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/third_party_trust.png" alt="" width="563"><figcaption><p>source: <a href="https://www.networkacademy.io/ccie-enterprise/sdwan/cisco-sd-wan-certificates-explained">https://www.networkacademy.io/ccie-enterprise/sdwan/cisco-sd-wan-certificates-explained</a> </p></figcaption></figure>
 
 </div>
 
@@ -60,7 +60,7 @@ Alice and Bob to the rescue:
    Or in the real world terms, a green padlock appears in your browser's address bar.\
 
 
-<figure><img src="../../.gitbook/assets/digital_certificate.png" alt=""><figcaption><p>source: <a href="https://id4d.worldbank.org/guide/digital-certificates-and-pki">https://id4d.worldbank.org/guide/digital-certificates-and-pki</a> </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/digital_certificate.png" alt=""><figcaption><p>source: <a href="https://id4d.worldbank.org/guide/digital-certificates-and-pki">https://id4d.worldbank.org/guide/digital-certificates-and-pki</a> </p></figcaption></figure>
 
 {% hint style="info" %}
 A Certificate Authority that you can try for free is [Let's Encrypt](https://letsencrypt.org/), a non-profit organization that issues certificates using domain ownership validation.
@@ -74,11 +74,11 @@ You could technically do a self-signed certificate, it will still provide an enc
 
 Certification Authorities are based on a Distributed Trust Model, or chain of  trust, where root CAs sign intermediate CAs, distributing the load and delegating authority into more entities, so if a key were to be compromised it would not affect the whole of the certificates.
 
-<figure><img src="../../.gitbook/assets/rootCA.png" alt=""><figcaption><p>source: <a href="https://youtu.be/LPxeYtMDxl0?feature=shared">https://youtu.be/LPxeYtMDxl0?feature=shared</a> </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/rootCA.png" alt=""><figcaption><p>source: <a href="https://youtu.be/LPxeYtMDxl0?feature=shared">https://youtu.be/LPxeYtMDxl0?feature=shared</a> </p></figcaption></figure>
 
 At some point of the chain the certificate has to be self-signed, there has to be a starting trusting point, this is handled by the root CA. They will have the most extreme security measures. They will act as a trust anchor, preinstalled in most browsers, with longer certificate lifespans. Root CAs main work is to verify other intermediate CAs that will be more operational and take the workload of the internet.
 
-<figure><img src="../../.gitbook/assets/CA_chainOfTrust.png" alt=""><figcaption><p>source: <a href="https://youtu.be/LPxeYtMDxl0?feature=shared">https://youtu.be/LPxeYtMDxl0?feature=shared</a> </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/CA_chainOfTrust.png" alt=""><figcaption><p>source: <a href="https://youtu.be/LPxeYtMDxl0?feature=shared">https://youtu.be/LPxeYtMDxl0?feature=shared</a> </p></figcaption></figure>
 
 #### What if the CA gets compromised?
 
@@ -98,7 +98,7 @@ Here are the steps of the OCSP Stapling process:\
 This protocol apart from securing the certificates, saves a lot of traffic, since the web server will issue a single OCSP request every now and then for a certificate status, and then use it for all its clients. \
 Also OCSP servers will not have to deal with the client requests every time a web server is visited.
 
-<figure><img src="../../.gitbook/assets/OSCP_stapling.png" alt=""><figcaption><p>source: <a href="https://youtu.be/WXNKQ_otO_g?feature=shared">https://youtu.be/WXNKQ_otO_g?feature=shared</a> </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/OSCP_stapling.png" alt=""><figcaption><p>source: <a href="https://youtu.be/WXNKQ_otO_g?feature=shared">https://youtu.be/WXNKQ_otO_g?feature=shared</a> </p></figcaption></figure>
 
 {% hint style="danger" %}
 One very important thing to remember is that the whole process of encrypting a connection with confidentiality, integrity and authority, does NOT mean that the site is secure. Any bad actor can and will easily obtain a certificate. The padlock means the connection is private and secured from eavesdroppers, not that the destiny can be trusted.

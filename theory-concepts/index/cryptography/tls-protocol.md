@@ -33,7 +33,7 @@ From now on they will use both ISN numbers in each direction to verify that ever
 \
 Here's an in depth [video](https://www.youtube.com/watch?v=rmFX1V49K8U) about the Three-Way Handshake protocol using Wireshark for visual understanding.
 
-<figure><img src="../../.gitbook/assets/3wayHandshake.png" alt=""><figcaption><p>source: <a href="https://afteracademy.com/blog/what-is-a-tcp-3-way-handshake-process/">https://afteracademy.com/blog/what-is-a-tcp-3-way-handshake-process/</a> </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3wayHandshake.png" alt=""><figcaption><p>source: <a href="https://afteracademy.com/blog/what-is-a-tcp-3-way-handshake-process/">https://afteracademy.com/blog/what-is-a-tcp-3-way-handshake-process/</a> </p></figcaption></figure>
 
 Once the handshake is done, a TCP session is established, it's time to create a TLS private connection. We will look at each step of the TLS handshake, below is an image that I recommend to check in parallel with each step:
 
@@ -83,7 +83,7 @@ Now both parties have the session keys, but they need to prove it and check that
 10. **Application data:** now both parties have secure symmetric keys in their systems that no one else in the world has, they are ready to use them to send actual application data.\
 
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>source: <a href="https://youtu.be/25_ftpJ-2ME?feature=shared">https://youtu.be/25_ftpJ-2ME</a></p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>source: <a href="https://youtu.be/25_ftpJ-2ME?feature=shared">https://youtu.be/25_ftpJ-2ME</a></p></figcaption></figure>
 
 For a more in depth and visual explanation using Wireshark you can watch this [video](https://www.youtube.com/watch?v=25\_ftpJ-2ME).&#x20;
 

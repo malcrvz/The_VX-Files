@@ -47,7 +47,7 @@ Encrypting is meant to BE reversible, make data gibberish and then turn it back 
 
 One of the main uses of hash functions is to store passwords.\
 Before you register a password to a website for example, it will be hashed and the value stored in the web's database, not your actual password. This way if a bad actor gets access to the database, all it will see are hashed strings. Its also good for privacy since the website shouldn't have to know your password, you don't know who is in the other side.\
-This doesn't mean there aren't ways to get your password, specially if it is very bad, with [password attacks](../../baseline-pentesting/techniques/password-cracking.md). \
+This doesn't mean there aren't ways to get your password, specially if it is very bad, with [password attacks](../../../baseline-pentesting/techniques/password-cracking.md). \
 There's been cases of websites storing passwords in clear text, creating historical personal information leaks, huge wordlists for the world to use and security scandals like the infamous [rockyou](https://en.wikipedia.org/wiki/RockYou) case. \
 Trust no one! Always use unique passwords!
 
@@ -67,7 +67,7 @@ As each password will also have a unique random extra value added to the hash, e
 This process has 2 big advantages:
 
 * If two users use the same password it will still be stored with a different hash.
-* Will make [password attacks](../../baseline-pentesting/techniques/password-cracking.md) exponentially harder and slower, specially rainbow table attacks.
+* Will make [password attacks](../../../baseline-pentesting/techniques/password-cracking.md) exponentially harder and slower, specially rainbow table attacks.
 
 Salting is no magic solution tho, if the password database is compromised the salt will be compromised too, it will still slow down the process as the bad actor has to add the salt of each user to each try but it will be automated anyways.\
 Also if the random auto-generation code is bad it will be easy for bad actors to guess the salt. \
