@@ -1,10 +1,6 @@
----
-description: User management files
----
-
 # Passwd & Shadow files
 
-## /etc/passwd
+### /etc/passwd
 
 {% hint style="info" %}
 Contains users public data: login name, IDs, home directory location, default shell...
@@ -12,7 +8,7 @@ Contains users public data: login name, IDs, home directory location, default sh
 
 <figure><img src="../.gitbook/assets/etc-passwd.png" alt=""><figcaption></figcaption></figure>
 
-## /etc/shadow
+### /etc/shadow
 
 {% hint style="info" %}
 Contains hashed passwords and longevity info&#x20;

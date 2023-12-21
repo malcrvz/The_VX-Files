@@ -48,6 +48,7 @@
   * [1. Pre-Engagement](baseline-pentesting/tools/1.-pre-engagement.md)
   * [2. Information gathering](baseline-pentesting/tools/2.-information-gathering/README.md)
     * [Nmap](baseline-pentesting/tools/2.-information-gathering/nmap.md)
+    * [arp](baseline-pentesting/tools/2.-information-gathering/arp.md)
   * [3. Vulnerability assessment](baseline-pentesting/tools/3.-vulnerability-assessment.md)
   * [4. Exploitation](baseline-pentesting/tools/4.-exploitation/README.md)
     * [Metasploit](baseline-pentesting/tools/4.-exploitation/metasploit.md)
@@ -101,13 +102,13 @@
 ## 🐧 Linux Essentials
 
 * [1, 0, bits, Bytes: Units of digital information](linux-essentials/1-0-bits-bytes-units-of-digital-information.md)
+* [User management](linux-essentials/user-management.md)
+* [Passwd & Shadow files](linux-essentials/passwd-and-shadow-files.md)
 * [Privileges & sudo](linux-essentials/privileges-and-sudo.md)
 * [Managing files, links and regex](linux-essentials/managing-files-links-and-regex.md)
 * [find](linux-essentials/find.md)
-* [User management](linux-essentials/user-management.md)
-* [Passwd & Shadow files](linux-essentials/passwd-and-shadow-files.md)
 * [Terminal/TTY](linux-essentials/terminal-tty.md)
-* [ssh & key pair](linux-essentials/ssh-and-key-pair.md)
+* [SSH](linux-essentials/ssh.md)
 
 ## 🪟 Windows Essentials
 

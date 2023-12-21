@@ -46,7 +46,7 @@ Encrypting is meant to BE reversible, make data gibberish and then turn it back 
 ### Password storing
 
 One of the main uses of hash functions is to store passwords.\
-Before you register a password to a website for example, it will be hashed and the value stored in the web's database, not your actual password. This way if a bad actor gets access to the database, all it will see are hashed passwords. Also good for privacy since the website shouldn't have to know your password, you don't know who is in the other side.\
+Before you register a password to a website for example, it will be hashed and the value stored in the web's database, not your actual password. This way if a bad actor gets access to the database, all it will see are hashed strings. Its also good for privacy since the website shouldn't have to know your password, you don't know who is in the other side.\
 This doesn't mean there aren't ways to get your password, specially if it is very bad, with [password attacks](../../baseline-pentesting/techniques/password-cracking.md). \
 There's been cases of websites storing passwords in clear text, creating historical personal information leaks, huge wordlists for the world to use and security scandals like the infamous [rockyou](https://en.wikipedia.org/wiki/RockYou) case. \
 Trust no one! Always use unique passwords!
@@ -61,7 +61,7 @@ Here's a basic example:
 2. A random salt, let's say "abc123" is generated.
 3. The hash function is applied to the concatenation of the password and the salt, \
    AKA hash ->"ilovechocolateabc123"
-4. The resulting hash is stored in the database next to the salt
+4. The resulting hash is stored in the database with the salt
 
 As each password will also have a unique random extra value added to the hash, even if the hash of "ilovechocolate" is found, the bad actor would still need the salt to crack the password.\
 This process has 2 big advantages:
@@ -79,5 +79,5 @@ Pepper uses a similar principle as salt, its added to the "salt + password" befo
 The pro is that the pepper is stored secretly in a config file or key management system, away from the database, so even if it leaks, the bad actors would still need to compromise the pepper, that will desirably be in a best protected system.\
 \
 \
-Anyway Salt and Pepper have its own defects and as they might be impractical, have to be implemented by a professional and consume extra resources, not everyone uses them. \
-So the best practice is for the user to always use long, strong and unique passwords!
+Anyway Salt and Pepper have its own problems because they might be impractical, have to be implemented by a professional and consume extra resources, so not everyone uses them. \
+The best practice is for the user to always use long, strong and unique passwords!
