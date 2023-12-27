@@ -24,7 +24,7 @@ By default users have ownership of the item they create and the group assigned w
 
 If user is deleted file will still be property of the user, though it will show used UID and GUID of the late user.
 
-<figure><img src="../.gitbook/assets/rwxrwxrwx.png" alt=""><figcaption><p>source: linuxcommand.org </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/rwxrwxrwx.png" alt=""><figcaption><p>source: linuxcommand.org </p></figcaption></figure>
 
 <pre class="language-bash" data-title="Syntax"><code class="lang-bash">#Numeric mode chart
 7 == rwx
@@ -89,7 +89,7 @@ Useful for directories like `/tmp` where most users have access and deleting fil
 Is shown at the end, in the "others" segment instead of "x", `rwt` if executable, `rwT` if not executable
 
 {% hint style="warning" %}
-Though useful, special permissions can easily become a vulnerability if not precisely configured, and a great vector for privilege scaling. Look for them when pentesting [;)](../baseline-pentesting/tools/6.-privilege-escalation-and-lateral-movement/possible-vectors.md)
+Though useful, special permissions can easily become a vulnerability if not precisely configured, and a great vector for privilege scaling. Look for them when pentesting [;)](../../network-pentesting/techniques/possible-privilege-escalation-vectors-manual-checklist.md)
 {% endhint %}
 
 {% code title="Syntax" %}
@@ -154,7 +154,7 @@ getfacl file1 | setfacl --set-file=- file2    #Copy ACL of one file to other  !U
 </code></pre>
 
 {% hint style="warning" %}
-Useful, but they can be complex and conflict with standard privileges, so they amplify the _human factor_ hackers love. Look for them trying to scale privileges [;)](../baseline-pentesting/tools/6.-privilege-escalation-and-lateral-movement/possible-vectors.md)
+Useful, but they can be complex and conflict with standard privileges, so they amplify the _human factor_ hackers love. Look for them trying to scale privileges [;)](../../network-pentesting/techniques/possible-privilege-escalation-vectors-manual-checklist.md)
 {% endhint %}
 
 ***

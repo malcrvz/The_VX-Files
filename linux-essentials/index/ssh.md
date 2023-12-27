@@ -1,6 +1,6 @@
 # SSH
 
-SSH (Secure SHell), is a protocol used in Unix-based OSs to control systems remotely using an [encrypted](../theory-concepts/index/cryptography/symmetric-asymmetric-and-hybrid-cryptography.md) secure connection. It lets you run commands on another system as if you were in front of it.\
+SSH (Secure SHell), is a protocol used in Unix-based OSs to control systems remotely using an [encrypted](../../cybersecurity-theory/index/cryptography/symmetric-asymmetric-and-hybrid-cryptography.md) secure connection. It lets you run commands on another system as if you were in front of it.\
 \
 It was first developed in 1995 by [Tatu Ylönen](https://es.wikipedia.org/wiki/Tatu\_Yl%C3%B6nen) after he discovered there was a password sniffer being used at his university, because in those times people still used non-encrypted remote access protocols like Telnet or RLogin. Back in the 90's it may have not been that important still, because of the early days of the internet and remote access not being as used as today, sysadmins would typically work in the same building as the servers are in, but in this modern age you can imagine how dangerous would be to send the admin login credentials of a server containing a full clients' database as plain text from the home of a remote worker. Encrypted remote access is a must. \
 The first version of the protocol "SSH-1" had vulnerabilities, so Tatu and his team developed SSH-2 which became the de facto standard for secure remote access. The developing has continued over the years and is still ongoing.\

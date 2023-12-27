@@ -1,79 +1,97 @@
 # Table of contents
 
-## The VX-Files
-
 * [README.txt](README.md)
 * [For updates, questions, suggestions or just chatting: @malcrvz](https://twitter.com/malcrvz)
 * [Download your own local copy or check my other libre projects: Github/malcrvz](https://github.com/malcrvz)
 
-## 📕 Theory concepts
+## 📕 Cybersecurity Theory
 
-* [Index](theory-concepts/index/README.md)
-  * [Malware types](theory-concepts/index/malware-types/README.md)
-    * [Viruses, worms and Trojans](theory-concepts/index/malware-types/viruses-worms-and-trojans.md)
-    * [Backdoors, Rootkits and Spyware](theory-concepts/index/malware-types/backdoors-rootkits-and-spyware.md)
-    * [Botnets, DDoS and Spammer](theory-concepts/index/malware-types/botnets-ddos-and-spammer.md)
-    * [Ransomware](theory-concepts/index/malware-types/ransomware.md)
-    * [Scareware and Adware/PUP/PUA](theory-concepts/index/malware-types/scareware-and-adware-pup-pua.md)
-    * [Downloaders and Launchers](theory-concepts/index/malware-types/downloaders-and-launchers.md)
-    * [Hacktool](theory-concepts/index/malware-types/hacktool.md)
-    * [APT - Advanced Persistent Threat](theory-concepts/index/malware-types/apt-advanced-persistent-threat.md)
-  * [Social engineering techniques](theory-concepts/index/social-engineering-techniques/README.md)
-    * [Phishing](theory-concepts/index/social-engineering-techniques/phishing.md)
-    * [Pretexting](theory-concepts/index/social-engineering-techniques/pretexting.md)
-    * [Baiting](theory-concepts/index/social-engineering-techniques/baiting.md)
-    * [Quid pro quo](theory-concepts/index/social-engineering-techniques/quid-pro-quo.md)
-    * [Tailgating](theory-concepts/index/social-engineering-techniques/tailgating.md)
-  * [Cryptography](theory-concepts/index/cryptography/README.md)
-    * [Hash functions](theory-concepts/index/cryptography/hash-functions.md)
-    * [Symmetric, Asymmetric and Hybrid cryptography](theory-concepts/index/cryptography/symmetric-asymmetric-and-hybrid-cryptography.md)
-    * [Digital signatures & Digital certificates](theory-concepts/index/cryptography/digital-signatures-and-digital-certificates.md)
-    * [TLS Protocol](theory-concepts/index/cryptography/tls-protocol.md)
-  * [Pentesting methodology & Techniques](theory-concepts/index/pentesting-methodology-and-techniques/README.md)
-    * [CIA Triad - Confidentiality, Integrity & Availability](theory-concepts/index/pentesting-methodology-and-techniques/cia-triad-confidentiality-integrity-and-availability.md)
-    * [The methodology steps](theory-concepts/index/pentesting-methodology-and-techniques/the-methodology-steps.md)
-    * [Pre-Engagement](theory-concepts/index/pentesting-methodology-and-techniques/pre-engagement.md)
-    * [Information Gathering](theory-concepts/index/pentesting-methodology-and-techniques/information-gathering/README.md)
-      * [HTTP status codes](theory-concepts/index/pentesting-methodology-and-techniques/information-gathering/http-status-codes.md)
-      * [robots.txt](theory-concepts/index/pentesting-methodology-and-techniques/information-gathering/robots.txt.md)
-    * [Vulnerability Assessment](theory-concepts/index/pentesting-methodology-and-techniques/vulnerability-assessment.md)
-    * [Exploitation](theory-concepts/index/pentesting-methodology-and-techniques/exploitation.md)
-    * [Post-Exploitation & Persistence](theory-concepts/index/pentesting-methodology-and-techniques/post-exploitation-and-persistence/README.md)
-      * [Types of Shells](theory-concepts/index/pentesting-methodology-and-techniques/post-exploitation-and-persistence/types-of-shells.md)
-    * [Privilege Escalation & Lateral Movement](theory-concepts/index/pentesting-methodology-and-techniques/privilege-escalation-and-lateral-movement.md)
-    * [Reporting & Remediation](theory-concepts/index/pentesting-methodology-and-techniques/reporting-and-remediation.md)
+* [Index](cybersecurity-theory/index/README.md)
+  * [Malware types](cybersecurity-theory/index/malware-types/README.md)
+    * [Viruses, worms and Trojans](cybersecurity-theory/index/malware-types/viruses-worms-and-trojans.md)
+    * [Backdoors, Rootkits and Spyware](cybersecurity-theory/index/malware-types/backdoors-rootkits-and-spyware.md)
+    * [Botnets, DDoS and Spammer](cybersecurity-theory/index/malware-types/botnets-ddos-and-spammer.md)
+    * [Ransomware](cybersecurity-theory/index/malware-types/ransomware.md)
+    * [Scareware and Adware/PUP/PUA](cybersecurity-theory/index/malware-types/scareware-and-adware-pup-pua.md)
+    * [Downloaders and Launchers](cybersecurity-theory/index/malware-types/downloaders-and-launchers.md)
+    * [Hacktool](cybersecurity-theory/index/malware-types/hacktool.md)
+    * [APT - Advanced Persistent Threat](cybersecurity-theory/index/malware-types/apt-advanced-persistent-threat.md)
+  * [Social engineering techniques](cybersecurity-theory/index/social-engineering-techniques/README.md)
+    * [Phishing](cybersecurity-theory/index/social-engineering-techniques/phishing.md)
+    * [Pretexting](cybersecurity-theory/index/social-engineering-techniques/pretexting.md)
+    * [Baiting](cybersecurity-theory/index/social-engineering-techniques/baiting.md)
+    * [Quid pro quo](cybersecurity-theory/index/social-engineering-techniques/quid-pro-quo.md)
+    * [Tailgating](cybersecurity-theory/index/social-engineering-techniques/tailgating.md)
+  * [Cryptography](cybersecurity-theory/index/cryptography/README.md)
+    * [Hash functions](cybersecurity-theory/index/cryptography/hash-functions.md)
+    * [Symmetric, Asymmetric and Hybrid cryptography](cybersecurity-theory/index/cryptography/symmetric-asymmetric-and-hybrid-cryptography.md)
+    * [Digital signatures & Digital certificates](cybersecurity-theory/index/cryptography/digital-signatures-and-digital-certificates.md)
+    * [TLS Protocol](cybersecurity-theory/index/cryptography/tls-protocol.md)
+  * [Pentesting methodology & Techniques](cybersecurity-theory/index/pentesting-methodology-and-techniques/README.md)
+    * [CIA Triad - Confidentiality, Integrity & Availability](cybersecurity-theory/index/pentesting-methodology-and-techniques/cia-triad-confidentiality-integrity-and-availability.md)
+    * [The methodology steps](cybersecurity-theory/index/pentesting-methodology-and-techniques/the-methodology-steps.md)
+    * [Pre-Engagement](cybersecurity-theory/index/pentesting-methodology-and-techniques/pre-engagement.md)
+    * [Information Gathering](cybersecurity-theory/index/pentesting-methodology-and-techniques/information-gathering/README.md)
+      * [HTTP status codes](cybersecurity-theory/index/pentesting-methodology-and-techniques/information-gathering/http-status-codes.md)
+      * [robots.txt](cybersecurity-theory/index/pentesting-methodology-and-techniques/information-gathering/robots.txt.md)
+    * [Vulnerability Assessment](cybersecurity-theory/index/pentesting-methodology-and-techniques/vulnerability-assessment.md)
+    * [Exploitation](cybersecurity-theory/index/pentesting-methodology-and-techniques/exploitation/README.md)
+      * [Password cracking](cybersecurity-theory/index/pentesting-methodology-and-techniques/exploitation/password-cracking.md)
+    * [Post-Exploitation & Persistence](cybersecurity-theory/index/pentesting-methodology-and-techniques/post-exploitation-and-persistence/README.md)
+      * [Types of Shells](cybersecurity-theory/index/pentesting-methodology-and-techniques/post-exploitation-and-persistence/types-of-shells.md)
+    * [Privilege Escalation & Lateral Movement](cybersecurity-theory/index/pentesting-methodology-and-techniques/privilege-escalation-and-lateral-movement.md)
+    * [Reporting & Remediation](cybersecurity-theory/index/pentesting-methodology-and-techniques/reporting-and-remediation.md)
 
-## 🗝 Baseline Pentesting
+## 🐧 Linux Essentials
 
-* [Tools](baseline-pentesting/tools/README.md)
-  * [1. Pre-Engagement](baseline-pentesting/tools/1.-pre-engagement.md)
-  * [2. Information gathering](baseline-pentesting/tools/2.-information-gathering/README.md)
-    * [Nmap](baseline-pentesting/tools/2.-information-gathering/nmap.md)
-    * [arp](baseline-pentesting/tools/2.-information-gathering/arp.md)
-  * [3. Vulnerability assessment](baseline-pentesting/tools/3.-vulnerability-assessment.md)
-  * [4. Exploitation](baseline-pentesting/tools/4.-exploitation/README.md)
-    * [Metasploit](baseline-pentesting/tools/4.-exploitation/metasploit.md)
-    * [Hashcat](baseline-pentesting/tools/4.-exploitation/hashcat.md)
-  * [5. Post-Exploitation & Persistence](baseline-pentesting/tools/5.-post-exploitation-and-persistence.md)
-  * [6. Privilege escalation & Lateral movement](baseline-pentesting/tools/6.-privilege-escalation-and-lateral-movement/README.md)
-    * [Possible vectors](baseline-pentesting/tools/6.-privilege-escalation-and-lateral-movement/possible-vectors.md)
-    * [Vector auto-enumeration scripts](baseline-pentesting/tools/6.-privilege-escalation-and-lateral-movement/vector-auto-enumeration-scripts.md)
-  * [7. Reporting & Remediation](baseline-pentesting/tools/7.-reporting-and-remediation.md)
-* [Techniques](baseline-pentesting/techniques/README.md)
-  * [Password cracking](baseline-pentesting/techniques/password-cracking.md)
-* [Resources](baseline-pentesting/resources/README.md)
-  * [Manufacturer default passwords lists](baseline-pentesting/resources/manufacturer-default-passwords-lists/README.md)
-    * [IP Cameras](baseline-pentesting/resources/manufacturer-default-passwords-lists/ip-cameras.md)
+* [Index](linux-essentials/index/README.md)
+  * [1, 0, bits, Bytes: Units of digital information](linux-essentials/index/1-0-bits-bytes-units-of-digital-information.md)
+  * [User management](linux-essentials/index/user-management.md)
+  * [Passwd & Shadow files](linux-essentials/index/passwd-and-shadow-files.md)
+  * [Privileges & sudo](linux-essentials/index/privileges-and-sudo.md)
+  * [Managing files, links and regex](linux-essentials/index/managing-files-links-and-regex.md)
+  * [find](linux-essentials/index/find.md)
+  * [Terminal/TTY](linux-essentials/index/terminal-tty.md)
+  * [SSH](linux-essentials/index/ssh.md)
 
-## 🕸 Network pentesting
+## 🪟 Windows Essentials
+
+* [Index](windows-essentials/index/README.md)
+  * [CLI user management](windows-essentials/index/cli-user-management.md)
+  * [CMD File management](windows-essentials/index/cmd-file-management.md)
+
+## 🌍 Networking Essentials
+
+* [Index](networking-essentials/index/README.md)
+  * [Windows CLI IP management](networking-essentials/index/windows-cli-ip-management.md)
+  * [Linux IP management](networking-essentials/index/linux-ip-management.md)
+  * [Linux CLI Wi-Fi connection](networking-essentials/index/linux-cli-wi-fi-connection.md)
+
+## 🕸 Network Pentesting
 
 * [Tools](network-pentesting/tools/README.md)
-  * [SSH](network-pentesting/tools/ssh.md)
-  * [Netcat](network-pentesting/tools/netcat.md)
-  * [smbclient](network-pentesting/tools/smbclient.md)
-  * [OpenVPN](network-pentesting/tools/openvpn.md)
-* [Techniques](network-pentesting/techniques.md)
+  * [1. Pre-Engagement](network-pentesting/tools/1.-pre-engagement/README.md)
+    * [OpenVPN](network-pentesting/tools/1.-pre-engagement/openvpn.md)
+  * [2. Information gathering](network-pentesting/tools/2.-information-gathering/README.md)
+    * [Nmap](network-pentesting/tools/2.-information-gathering/nmap.md)
+    * [arp](network-pentesting/tools/2.-information-gathering/arp.md)
+    * [Netcat](network-pentesting/tools/2.-information-gathering/netcat.md)
+  * [3. Vulnerability assessment](network-pentesting/tools/3.-vulnerability-assessment/README.md)
+    * [smbclient](network-pentesting/tools/3.-vulnerability-assessment/smbclient.md)
+  * [4. Exploitation](network-pentesting/tools/4.-exploitation/README.md)
+    * [Metasploit](network-pentesting/tools/4.-exploitation/metasploit.md)
+    * [Hashcat](network-pentesting/tools/4.-exploitation/hashcat.md)
+  * [5. Post-Exploitation & Persistence](network-pentesting/tools/5.-post-exploitation-and-persistence/README.md)
+    * [SSH](network-pentesting/tools/5.-post-exploitation-and-persistence/ssh.md)
+  * [6. Privilege escalation & Lateral movement](network-pentesting/tools/6.-privilege-escalation-and-lateral-movement/README.md)
+    * [Vector auto-enumeration scripts](network-pentesting/tools/6.-privilege-escalation-and-lateral-movement/vector-auto-enumeration-scripts.md)
+  * [7. Reporting & Remediation](network-pentesting/tools/7.-reporting-and-remediation.md)
+* [Techniques](network-pentesting/techniques/README.md)
+  * [Transferring files to remote victim](network-pentesting/techniques/transferring-files-to-remote-victim.md)
+  * [Possible privilege escalation vectors manual checklist](network-pentesting/techniques/possible-privilege-escalation-vectors-manual-checklist.md)
 * [Resources](network-pentesting/resources/README.md)
+  * [Manufacturer default passwords lists](network-pentesting/resources/manufacturer-default-passwords-lists/README.md)
+    * [IP Cameras](network-pentesting/resources/manufacturer-default-passwords-lists/ip-cameras.md)
   * [Get Shells scripts](network-pentesting/resources/get-shells-scripts.md)
 
 ## 💉 Web App pentesting
@@ -107,28 +125,6 @@
   * [Inodes & Sectors](disks-and-forensics/index/inodes-and-sectors.md)
   * [Recover deleted files](disks-and-forensics/index/recover-deleted-files.md)
   * [BUILDING - Secure file deletion](disks-and-forensics/index/building-secure-file-deletion.md)
-
-## 🐧 Linux Essentials
-
-* [1, 0, bits, Bytes: Units of digital information](linux-essentials/1-0-bits-bytes-units-of-digital-information.md)
-* [User management](linux-essentials/user-management.md)
-* [Passwd & Shadow files](linux-essentials/passwd-and-shadow-files.md)
-* [Privileges & sudo](linux-essentials/privileges-and-sudo.md)
-* [Managing files, links and regex](linux-essentials/managing-files-links-and-regex.md)
-* [find](linux-essentials/find.md)
-* [Terminal/TTY](linux-essentials/terminal-tty.md)
-* [SSH](linux-essentials/ssh.md)
-
-## 🪟 Windows Essentials
-
-* [CLI user management](windows-essentials/cli-user-management.md)
-* [CMD File management](windows-essentials/cmd-file-management.md)
-
-## 🌍 Networking Essentials
-
-* [Windows CLI IP management](networking-essentials/windows-cli-ip-management.md)
-* [Linux IP management](networking-essentials/linux-ip-management.md)
-* [Linux CLI Wi-Fi connection](networking-essentials/linux-cli-wi-fi-connection.md)
 
 ## 🕷 Bash scripts
 
