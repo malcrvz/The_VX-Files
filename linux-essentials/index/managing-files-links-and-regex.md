@@ -374,6 +374,25 @@ patch -R file1 < resultdiff              #Reverse changes, anyways "patch" will 
 {% endtab %}
 {% endtabs %}
 
+{% tabs %}
+{% tab title="sed" %}
+```bash
+#Stream EDitor - For filtering and transforming text
+
+
+sed -i "$d" file.txt        #Removes the last line from a specified file, "-i" edits files in place, "$" represents last line, "d" delete
+
+
+```
+{% endtab %}
+
+{% tab title="tee" %}
+```bash
+tee 
+```
+{% endtab %}
+{% endtabs %}
+
 ***
 
 ## Links
