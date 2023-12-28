@@ -90,6 +90,7 @@
     * [Possible privilege escalation vectors - Auto-enumeration scripts](network-pentesting/tools/6.-privilege-escalation-and-lateral-movement/possible-privilege-escalation-vectors-auto-enumeration-scripts.md)
   * [7. Reporting & Remediation](network-pentesting/tools/7.-reporting-and-remediation.md)
 * [Techniques](network-pentesting/techniques/README.md)
+  * [Upgrade reverse shell to interactive](network-pentesting/techniques/upgrade-reverse-shell-to-interactive.md)
   * [Transferring files to/from remote victim](network-pentesting/techniques/transferring-files-to-from-remote-victim.md)
   * [Possible privilege escalation vectors - Manual checklist](network-pentesting/techniques/possible-privilege-escalation-vectors-manual-checklist.md)
 * [Resources](network-pentesting/resources/README.md)
@@ -103,9 +104,11 @@
   * [CeWL](web-app-pentesting/tools/cewl.md)
   * [Gobuster](web-app-pentesting/tools/gobuster.md)
   * [whatweb](web-app-pentesting/tools/whatweb.md)
-* [Techniques](web-app-pentesting/techniques.md)
+* [Techniques](web-app-pentesting/techniques/README.md)
+  * [Command injection](web-app-pentesting/techniques/command-injection.md)
 * [Resources](web-app-pentesting/resources/README.md)
-  * [Web Shells](web-app-pentesting/resources/web-shells.md)
+  * [Reverse Shells](web-app-pentesting/resources/reverse-shells.md)
+  * [Bind Shells](web-app-pentesting/resources/bind-shells.md)
 
 ## 📡 Wireless pentesting
 
@@ -137,16 +140,17 @@
 
 * [coming soon](powershell-scripts/coming-soon.md)
 
-## 🏴☠ Download resources
+## 🟩 HTB Walkthroughs
 
-* [Wordlists](download-resources/wordlists.md)
+* [coming soon](htb-walkthroughs/coming-soon.md)
 
-## 🌐 Online resources
+## 🏴☠ External Resources
 
-* [Schools](online-resources/schools.md)
-* [Books & Wikis](online-resources/books-and-wikis.md)
-* [Utilities](online-resources/utilities.md)
-* [Interactive cheat sheets](online-resources/interactive-cheat-sheets.md)
+* [Schools](external-resources/schools.md)
+* [Books & Wikis](external-resources/books-and-wikis.md)
+* [Utilities](external-resources/utilities.md)
+* [Interactive cheat sheets](external-resources/interactive-cheat-sheets.md)
+* [Wordlists](external-resources/wordlists.md)
 
 ## 🛠 Unfinished || Coming soon
 

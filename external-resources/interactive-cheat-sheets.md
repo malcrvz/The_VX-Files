@@ -1,10 +1,12 @@
+---
+description: Big cheat sheets you can interact with
+---
+
 # Interactive cheat sheets
 
 ### Explain Shell
 
-{% hint style="info" %}
 Enter a command and get an explanation of each parameter.
-{% endhint %}
 
 {% embed url="https://www.explainshell.com/" %}
 
@@ -12,9 +14,6 @@ Enter a command and get an explanation of each parameter.
 
 ### TLDR pages
 
-{% hint style="info" %}
-Simplifies man pages with practical examples\
-Available for download or [browser-based](https://tldr.inbrowser.app/).
-{% endhint %}
+Simplifies man pages with practical examples. Available for download or [browser-based](https://tldr.inbrowser.app/).
 
 {% embed url="https://tldr.sh/" %}
