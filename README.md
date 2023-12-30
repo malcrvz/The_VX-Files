@@ -52,7 +52,7 @@ Keep in mind it's just one dude, there might be errors!
 Also english is not my native language so sorry for future misspellings.
 
 The book assumes you have basic(not much) understanding on computer science.
-Its not tailored to be a 0 to hero. It's a side companion.
+It's not tailored to be a 0 to hero. It's a side companion.
 I hope my project helps you, but I can't recommend enough to create your own.
 Teaching is the fastest way to learn and knowledge should be free!
 If this helps you in any way, please reach, it would make my day <3
