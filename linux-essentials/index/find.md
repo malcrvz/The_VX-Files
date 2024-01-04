@@ -104,6 +104,11 @@ find / -atime +50 -atime -100          #Prints items accessed between 50 and 100
 find / -mtime n                        #Prints items (m)odified n ago
 find / -ctime n                        #Prints items with its status/metadata(privileges) (c)hanged n ago
 
+find / -newer file1                    #Prints items modified more recently than file1
+find / -newerat 1990-01-01             #Prints items accessed after the 1 of january of 1990, "t" specifies we will pass a date
+find / -newermt 1990-01-01             #Prints items modified after the 1 of january of 1990
+find / -newerct 1990-01-01             #Prints items which inode status changed after the 1 of january of 1990
+
 #Find and execute commands
 find / -exec command {} \;             #Executes x command on each file found
 #Think of {} like a for loop, one by one each file will pass through {} and get the command done
@@ -148,6 +153,9 @@ find / \(-path /proc -o -path /sys \) -prune -o -type f -perm -o=rwx
 
 #Searches for files with modified status or privileges in the last 7 days and ls them
 find / -type f -ctime -7 -exec ls -l {} \;
+
+#Finds all files with .bak extension and counts how many there are
+find / -type f -name *.bak | wc -l
 
 ```
 {% endcode %}
