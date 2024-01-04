@@ -242,6 +242,11 @@ grep -E "a{n,}" file1           #Prints lines that contain "a" repeated n or mor
 grep -E "a{,n}" file1           #Prints lines that contain "a" repeated maximum n times
 grep -E "a|b" file1             #Prints lines that contain "a" or "b"
 grep -E "Ja(s|cks)on" file1     #Prints lines that contain "Jason" or "Jackson" 
+grep -o -P "Tom.{1,10}" file1   #Prints all the ocurrences of "Tom" and the next 1 to 10 characters of the specified file
+
+#Examples
+#Print all the domain paths and links of a website
+curl website | tr " " "\n" | grep -oE 'https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&#x26;//=]*)'
 
 </code></pre>
 {% endtab %}
@@ -375,6 +380,12 @@ patch -R file1 < resultdiff              #Reverse changes, anyways "patch" will 
 {% endtabs %}
 
 {% tabs %}
+{% tab title="awk" %}
+```bash
+// Some code
+```
+{% endtab %}
+
 {% tab title="sed" %}
 ```bash
 #Stream EDitor - For filtering and transforming text
