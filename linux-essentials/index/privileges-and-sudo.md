@@ -176,6 +176,7 @@ sudo -l                         #Lists what sudo privileges current user has
 sudo su -                       #Executes "su" command as sudo, if we have that command privilege we become root  !This is why (ALL:ALL) ALL is dangerous!
 sudo -k                         #For convenience sudo will keep credentials for a small period of time, but for security, if you finished already, you can stop the timer with -k
 sudo !!                         #Very useful when you forget to use sudo, "!!" will repeat the last command, but we place sudo this time ;)
+su -c "command" userX           #Execute command as another user
 
 ```
 {% endcode %}

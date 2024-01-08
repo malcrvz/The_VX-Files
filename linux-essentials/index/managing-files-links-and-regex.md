@@ -243,6 +243,10 @@ grep -E "a{,n}" file1           #Prints lines that contain "a" repeated maximum 
 grep -E "a|b" file1             #Prints lines that contain "a" or "b"
 grep -E "Ja(s|cks)on" file1     #Prints lines that contain "Jason" or "Jackson" 
 grep -o -P "Tom.{1,10}" file1   #Prints all the ocurrences of "Tom" and the next 1 to 10 characters of the specified file
+grep "\&#x3C;abc\w*"                 #Prints lines that contain words that start with "abc" and end in whatever
+grep "\&#x3C;\w*abc\>"               #Prints lines that contain words that end with "abc"
+grep "\&#x3C;ab\w*cd\>"              #Prints lines that contain words that start with "ab" and end in "cd" with whatever in between
+
 
 #Examples
 #Print all the domain paths and links of a website
