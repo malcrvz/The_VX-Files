@@ -32,6 +32,7 @@ Welcome to my Ethical Hacking field book!
 
 Cheat sheets, down to earth definitions and guides!
 If you are on GitHub, switch to GitBook - So much pretty! Link in "About".
+If you can't read the end of a line, use the button of your mouse wheel.
 Save this page in bookmarks, others may dissapear.
 Keep in mind it's just one dude, there might be errors!
 Also english is not my native language so sorry for possible misspellings.
