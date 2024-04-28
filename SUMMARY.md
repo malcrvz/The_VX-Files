@@ -68,7 +68,7 @@
   * [Linux IP management](networking-essentials/index/linux-ip-management.md)
   * [Linux CLI Wi-Fi connection](networking-essentials/index/linux-cli-wi-fi-connection.md)
 
-## 🕸 Network Pentesting
+## 🕸️ Network Pentesting
 
 * [Tools](network-pentesting/tools/README.md)
   * [1. Pre-Engagement](network-pentesting/tools/1.-pre-engagement/README.md)
@@ -133,7 +133,7 @@
   * [Recover deleted files](disks-and-forensics/index/recover-deleted-files.md)
   * [BUILDING - Secure file deletion](disks-and-forensics/index/building-secure-file-deletion.md)
 
-## 🕷 Bash scripts
+## 🕷️ Bash scripts
 
 * [coming soon](bash-scripts/coming-soon.md)
 
@@ -145,14 +145,10 @@
 
 * [coming soon](htb-walkthroughs/coming-soon.md)
 
-## 🏴☠ External Resources
+## 🏴‍☠️ External Resources
 
 * [Schools](external-resources/schools.md)
 * [Books & Wikis](external-resources/books-and-wikis.md)
 * [Utilities](external-resources/utilities.md)
 * [Interactive cheat sheets](external-resources/interactive-cheat-sheets.md)
 * [Wordlists](external-resources/wordlists.md)
-
-## 🛠 Unfinished || Coming soon
-
-* [Idea bank](unfinished-or-or-coming-soon/idea-bank.md)

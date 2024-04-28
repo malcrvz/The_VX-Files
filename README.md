@@ -40,7 +40,7 @@ layout:
          ░  ░  ░  ░  ░         ░  ░    ░             ░      ░  ░   ░  ░      ░  
                               ░           
 by @malcrvz 
-Project started on All Hallows' Eve of 2023
+Project started on Halloween of 2023.
 
 
 Welcome to my Ethical Hacking field book!
@@ -49,7 +49,7 @@ Cheat sheets, down to earth definitions and guides!
 If you are on GitHub, switch to GitBook - So much pretty! Link in "About".
 Save this page in bookmarks, others may dissapear.
 Keep in mind it's just one dude, there might be errors!
-Also english is not my native language so sorry for future misspellings.
+Also english is not my native language so sorry for possible misspellings.
 
 The book assumes you have basic(not much) understanding on computer science.
 It's not tailored to be a 0 to hero. It's a side companion.
