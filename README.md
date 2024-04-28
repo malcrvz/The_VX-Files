@@ -28,21 +28,6 @@ layout:
 
 {% code title="README.txt" lineNumbers="true" %}
 ```
-
-▄▄▄█████▓██░ ██▓█████     ██▒   █▒██   ██▒     █████▒██▓ ██▓    ▓█████   ██████ 
-▓  ██▒ ▓▓██░ ██▓█   ▀    ▓██░   █▒▒ █ █ ▒░   ▓██   ▒▓██▒▓██▒    ▓█   ▀ ▒██    ▒ 
-▒ ▓██░ ▒▒██▀▀██▒███       ▓██  █▒░░  █   ░▄▄▄▒████ ░▒██▒▒██░    ▒███   ░ ▓██▄   
-░ ▓██▓ ░░▓█ ░██▒▓█  ▄      ▒██ █░░░ █ █ ▒ ░▒░░▓█▒  ░░██░▒██░    ▒▓█  ▄   ▒   ██▒
-  ▒██▒ ░░▓█▒░██░▒████▒      ▒▀█░ ▒██▒ ▒██▒ ░ ░▒█░   ░██░░██████▒░▒████▒▒██████▒▒
-  ▒ ░░   ▒ ░░▒░░░ ▒░ ░      ░ ▐░ ▒▒ ░ ░▓ ░    ▒ ░   ░▓  ░ ▒░▓  ░░░ ▒░ ░▒ ▒▓▒ ▒ ░
-    ░    ▒ ░▒░ ░░ ░  ░      ░ ░░ ░░   ░▒ ░    ░      ▒ ░░ ░ ▒  ░ ░ ░  ░░ ░▒  ░ ░
-  ░      ░  ░░ ░  ░           ░░  ░    ░      ░ ░    ▒ ░  ░ ░      ░   ░  ░  ░  
-         ░  ░  ░  ░  ░         ░  ░    ░             ░      ░  ░   ░  ░      ░  
-                              ░           
-by @malcrvz 
-Project started on Halloween of 2023.
-
-
 Welcome to my Ethical Hacking field book!
 
 Cheat sheets, down to earth definitions and guides!
@@ -57,6 +42,8 @@ I hope my project helps you, but I can't recommend enough to create your own.
 Teaching is the fastest way to learn and knowledge should be free!
 If this helps you in any way, please reach, it would make my day <3
 
+
+Project started on Halloween of 2023 by @malcrvz
 GPL-3.0 license, do whatever you want but keep it free.
 ```
 {% endcode %}
